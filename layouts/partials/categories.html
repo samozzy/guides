@@ -1,0 +1,4 @@
+More about: {{ range .Params.categories }}
+	<a href="/categories/{{ urlize . }}" >{{ title . }}</a>, 
+{{ end }}
+Tags: {{ delimit .Params.tags ", " }}

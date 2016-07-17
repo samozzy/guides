@@ -1,0 +1,32 @@
+language: go
+go:
+  - 1.4
+sudo: false
+
+#Ready the project
+before_install:
+  - rvm install 2.2.2
+install:
+  - go get github.com/spf13/hugo
+  - gem install bundler
+  - bundle install --without development --deployment --jobs=3 --retry=3 --binstubs
+  #Given the Gemfile, bundle will install all the dependencies and nothing else is needed. 
+cache:
+  directories:
+  - vendor/bundle
+
+before_script: 
+  - go vet ./...
+script:
+ # - bin/compass compile -e production --force
+ - hugo
+# after_script:
+#   - _bin/deploy.sh
+# branches:
+#   only:
+#   - master
+env:
+  global:
+    - RESET=true
+    - GH_REF=github.com/samozzy/guides.git
+    - secure: "MiT2A8ORHTllqeEF4g/ZeMe+A3xKF9rTT69ldaYqLJKU+2kOMn3e3hsJuFYVVHRTq7u5yQTywEoS7vMSXdyiQ0VBg4xSZtjPtp3B5m1ffuWFQcxwIHVX2cpVaS0JCf5tVO3rbof9RerfdI5zxy7f5GuUmntiwNigc6j4V4UdFBrvrKCS4cIStOr8J2QqRYOWTtSU59EEk+F2LKT8xuVO+Ef83s+57mLyG7B1S9VUjd4C03UtSGCg1Lu/+g2JbcGGyhtCGadgDSZUSU19roBX7gWNJP4UXQh09gImdW8nuaBEMPZocWqnU6AzbyXF8mxCYLmISfJI3DGevyOWiURIDS9NGGY3nVqVIF3ioKvtq+p2EEwmrK/DMVNt619A6uocfdOSjv907lCgSeh4Kdt37pO5BPmMAiiCGyq7HkpSgW/+bOEXBbTqMqtXP0nmF8Vr7UVWwhCAH85yBVlPiNraQE2uQj3K/cghTpOfTT52/8x4CeiAESfiqb6alw8t00fdwJnFnBYhOLkNemY7JnJFEB2ohHyeTokz9FJptmh212ZEVDCbzPdBHW9UuTiLYi3Hhz5bmRMtEgJ290SS17P3iFcokPxMXljYWe66g+sL+P+TFuZ47toE35FRAVf357vtPrwwcENt7Zz48DDNAur5P8wVBqP2kvZcxb33yT7oxVQ="
