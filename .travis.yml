@@ -4,6 +4,10 @@ go:
 sudo: false
 
 #Ready the project
+addons:
+  apt:
+    packages:
+      -ruby
 install:
   - go get github.com/spf13/hugo
   - gem install bundler
@@ -12,6 +16,9 @@ install:
 cache:
   directories:
   - vendor/bundle
+
+before_script: 
+  - go vet ./...
 script:
  # - bin/compass compile -e production --force
  - hugo
