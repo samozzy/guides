@@ -18,7 +18,7 @@ cache:
 before_script: 
   - go vet ./...
 script:
- # - bin/compass compile -e production --force
+ - bin/compass compile -e production --force
  - hugo
 # after_script:
 #   - _bin/deploy.sh
