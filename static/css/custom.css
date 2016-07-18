@@ -1,16 +1,25 @@
-section#top, section#bottom {
-	background: pink;
-	color: #797373;
-}
-section#mid {
-	background:white;
-}
+/* line 5, ../sass/custom.scss */
 #TableOfContents {
-	font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 18px;
-	color: #757575;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
+/* line 8, ../sass/custom.scss */
 #TableOfContents ul {
-	list-style-type: none;
-	line-height: 4;
+  list-style-type: none;
+  line-height: 4;
+}
+/* line 11, ../sass/custom.scss */
+#TableOfContents ul a {
+  color: #777777;
+}
+
+/* line 17, ../sass/custom.scss */
+section#top, section#bottom {
+  background: pink;
+  color: #777777;
+}
+
+/* line 21, ../sass/custom.scss */
+section#mid {
+  background: white;
 }
