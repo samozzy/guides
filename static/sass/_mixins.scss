@@ -13,6 +13,11 @@
     -o-background-size: cover;
 }
 
+@mixin transparent-background($background,$amount) {
+	background: $background;
+	background: rgba($background,$amount);
+}
+
 @mixin serif-font{
 	font-family: 'Lora', 'Times New Roman', serif;
 }
