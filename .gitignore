@@ -1,2 +1,4 @@
 #CSS, SASS and Compass things
 *.sass-cache*/
+
+static/css/clean-blog.css
