@@ -5,13 +5,15 @@ description = ""
 draft = false
 image = "/img/about-bg.jpg"
 tags = ["test"]
-title = "Here is a test post!"
+title = "This is a news post!"
 slug = "test"
 author = "The Doctor"
 
 +++
 
 # Heading 1
+This is the news.
+
 ## Heading 2
 Have some content.
 

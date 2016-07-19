@@ -13,6 +13,10 @@ title = "Girl Guiding Beeston"
   # email = "benoit.benedetti@gmail.com"
   # Ganalytics = "XX-00000000-0"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 # [[params.social]]
 #   title = "twitter"
 #   url = "https://twitter.com/humboldtux"
@@ -29,5 +33,5 @@ title = "Girl Guiding Beeston"
   weight = 1
 [[menu.main]]
   name = "News Posts"
-  url = "/post/"
+  url = "/news/"
   weight = 2
