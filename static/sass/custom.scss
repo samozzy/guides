@@ -1,0 +1,23 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// Table of Contents
+#TableOfContents {
+	@include sans-serif-font;
+	font-size: 18px;
+	ul {
+		list-style-type: none;
+		line-height: 4;
+		a {
+			color: $gray-light;
+		}
+	}
+}
+
+section#top, section#bottom {
+	background: pink;
+	color: $gray-light;
+}
+section#mid {
+	background:white;
+}
