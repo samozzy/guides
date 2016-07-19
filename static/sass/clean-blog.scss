@@ -23,7 +23,7 @@
 
 body {
 	@include serif-font;
-	font-size: 20px;
+	font-size: $fs_body;
 	color: $gray-dark;
 	-webkit-tap-highlight-color: $theme-primary; 
 }
@@ -89,14 +89,14 @@ hr.small {
 			color: $gray-light;
 			font-weight: 800;
 			text-transform: uppercase;
-			font-size: 12px;
+			font-size: $fs_navigation;
 		}
 	}
 	.nav {
 		li {
 			a {
 				text-transform: uppercase;
-				font-size: 12px;
+				font-size: $fs_navigation;
 				font-weight: 800;
 				letter-spacing: 1px;
 			}
@@ -202,11 +202,11 @@ hr.small {
 		text-align: center;
 		h1 {
 			margin-top: 0;
-			font-size: 50px;
+			font-size: $fs_page-title;
 		}
 		.subheading {
 			@include sans-serif-font;
-			font-size: 24px;
+			font-size: $fs_page-subtitle;
 			line-height: 1.1;
 			display: block;
 			font-weight: 300;
@@ -214,13 +214,13 @@ hr.small {
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
-				font-size: 80px;
+				font-size: $fs_page-title + 30px;
 			}
 		}
 	}
 	.post-heading {
 		h1 {
-			font-size: 35px;
+			font-size: $fs_post-title;
 		}
 		.subheading,
 		.meta {
@@ -229,7 +229,7 @@ hr.small {
 		}
 		.subheading {
 			@include sans-serif-font;
-			font-size: 24px;
+			font-size: $fs_post-subtitle;
 			margin: 10px 0 30px;
 			font-weight: 600;
 		}
@@ -237,17 +237,17 @@ hr.small {
 			@include serif-font;
 			font-style: italic;
 			font-weight: 300;
-			font-size: 20px;
+			font-size: $fs_post-meta;
 			a {
 				color: $white;
 			}
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
-				font-size: 55px;
+				font-size: $fs_post-title + 20px;
 			}
 			.subheading {
-				font-size: 30px;
+				font-size: $fs_post-subtitle + 6px;
 			}
 		}
 	}
@@ -264,7 +264,7 @@ hr.small {
 			color: $theme-primary;
 		}
 		> .post-title {
-			font-size: 30px;
+			font-size: $fs_post-title - 5px;
 			margin-top: 30px;
 			margin-bottom: 10px;
 		}
@@ -276,7 +276,7 @@ hr.small {
 	}
 	> .post-meta {
 		color: $gray-light;
-		font-size: 18px;
+		font-size: $fs_post-meta - 2px;
 		font-style: italic;
 		margin-top: 0;
 		> a {
@@ -292,7 +292,7 @@ hr.small {
 	@media only screen and (min-width: 768px) {
 		> a {
 			> .post-title {
-				font-size: 36px;
+				font-size: $fs_section-heading;
 			}
 		}
 	}
@@ -301,14 +301,14 @@ hr.small {
 // Sections
 
 .section-heading {
-	font-size: 36px;
+	font-size: $fs_section-heading;
 	margin-top: 60px;
 	font-weight: 700;
 }
 
 .caption {
 	text-align: center;
-	font-size: 14px;
+	font-size: $font-size-base;
 	padding: 10px;
 	font-style: italic;
 	margin: 0;
@@ -324,7 +324,7 @@ footer {
 		padding: 0;
 	}
 	.copyright {
-		font-size: 14px;
+		font-size: $font-size-base;
 		text-align: center;
 		margin-bottom: 0;
 	}
@@ -333,7 +333,7 @@ footer {
 // Contact Form Styles
 
 .floating-label-form-group {
-	font-size: 14px;
+	font-size: $font-size-base;
 	position: relative;
 	margin-bottom: 0;
 	padding-bottom: 0.5em;
@@ -346,7 +346,7 @@ footer {
 		padding-left: 0;
 		border: none;
 		border-radius: 0;
-		font-size: 1.5em;
+		font-size: 1.5 * $font-size-base;
 		background: none;
 		box-shadow: none !important;
 		resize: none;
@@ -357,7 +357,7 @@ footer {
 		position: relative;
 		top: 2em;
 		margin: 0;
-		font-size: 0.85em;
+		font-size: 0.85 * $font-size-base;
 		line-height: 1.764705882em;
 		vertical-align: middle;
 		vertical-align: baseline;
@@ -395,7 +395,7 @@ form .row:first-child .floating-label-form-group {
 .btn {
 	@include sans-serif-font;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: $font-size-base;
 	font-weight: 800;
 	letter-spacing: 1px;
 	border-radius: 0;
@@ -403,7 +403,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .btn-lg {
-	font-size: 16px;
+	font-size: 1.15 * $font-size-base;
 	padding: 25px 35px;
 }
 
@@ -427,7 +427,7 @@ form .row:first-child .floating-label-form-group {
 		> span {
 			@include sans-serif-font;
 			text-transform: uppercase;
-			font-size: 14px;
+			font-size: $font-size-base;
 			font-weight: 800;
 			letter-spacing: 1px;
 			padding: 15px 25px;
