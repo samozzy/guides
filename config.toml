@@ -1,6 +1,6 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-gb"
-title = "Girl Guiding Beeston"
+title = "GirlGuiding Beeston"
 
 #Theme requirements
 [author]
@@ -8,7 +8,7 @@ title = "Girl Guiding Beeston"
 
 [params]
   DateForm = "2 January, 2006"
-  Description = "Information about a cool thing, straight from Beeston HQ"
+  Description = "GirlGuiding Beeston Division is part of GirlGuiding – the leading charity for girls and young women in the UK."
   Author = "Sam Osborne"
   # email = "benoit.benedetti@gmail.com"
   # Ganalytics = "XX-00000000-0"
