@@ -194,7 +194,7 @@ hr.small {
 		padding: 100px 0 50px;
 		color: $white;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 150px 0 100px;
 		}
 	}
 	.site-heading,
@@ -209,7 +209,7 @@ hr.small {
 			font-size: $fs_page-subtitle;
 			line-height: 1.1;
 			display: block;
-			font-weight: 300;
+			font-weight: 400;
 			margin: 10px 0 0;
 		}
 		@media only screen and (min-width: 768px) {
