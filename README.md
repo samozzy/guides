@@ -1,7 +1,11 @@
 # Beeston Girl Guiding
 
+
+[![Build Status](https://travis-ci.org/samozzy/guides.svg?branch=master)](https://travis-ci.org/samozzy/guides)
+
 Static site for Beeston Girl Guiding Divisions.
-To replace website currently at: [beestongirlguiding.org.uk](http://beestongirlguiding.org.uk), constructed with BT Community Web Kit.
+
+To replace website currently at: [beestongirlguiding.org.uk](http://www.beestongirlguiding.org.uk), constructed with BT Community Web Kit.
 
 ## How?
 New website to be made with Hugo Static Site Generator, and hosted on GitHub.
@@ -33,4 +37,6 @@ To keep all the stylish things up to date and,
 hugo server -w -D
 ```
 To make the website happen.
+
 Hugo will then tell you where the website is, which by default is [http://localhost:1313](http://localhost:1313).
+
