@@ -3,9 +3,9 @@
 
 	<div class="top-toc" data-spy="affix" data-offset-top=387>
 		<div class="container">
-			<div class="col-xs-11" id="spy">
+			<div class="col-xs-11">
 				{{ with .TableOfContents }}
-					{{ replace . "id=\"TableOfContents\"" "id='TableOfContents' class='top-toc'" | safeHTML }}
+					{{ replace . "id=\"TableOfContents\"" "id=\"TableOfContents\" class=\"top-toc \"" | safeHTML }}
 				{{ end }}
 			</div>
 			<div class="col-xs-1 to-top">

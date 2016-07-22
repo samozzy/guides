@@ -12,12 +12,11 @@
 @import '_mixins.scss';
 
 body {
-	height: 100%;
-	overflow: auto;
+	position: relative; //For scrollspy to work
 }
 
 // Floating submenu (using Table of Contents)
-div.top-toc{ 
+div.top-toc { 
 	background: $pink;
 	line-height: 2;
 	&.affix { // For when it floats
@@ -45,25 +44,32 @@ nav.top-toc > ul > li {
   visibility: hidden;
 }
 // Pretty submenu things
-nav.top-toc > ul,
+nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
 .to-top > ul, {
-	@extend nav, .nav, .nav-pills, .nav-justified, .nav:before, .nav:after; //So much Bootstrap! >_<
+	@extend .nav, .nav-pills, .nav-justified; //So much Bootstrap! >_<
 	@include sans-serif-font;
 }
-.to-top > ul > li {
+.to-top > ul > li { //Make the "top" icon do what the text does without looking terrible
 	> a:hover,
 	> a:focus {
-		background: none;
 		color: $rose;
+		background: none;
+	}
+	> a:focus {
+		color: $gray-dark; 
 	}
 }
-nav.top-toc > ul > li {
-	> a:hover,
-	> a:focus {
-		background: $rose;
+nav.top-toc > ul {
+	> li.active > a,
+	> li:hover, > li > a:hover,
+	> li:focus, > li > a:focus,
+	> li.active:hover, > li.active > a:hover,
+	> li.active:focus, > li.active > a:focus, { // I'm sure there's a way to not use so many selectors...
+		background-color: $rose;
 		color: $gray-dark;
 	}
 }
+
 nav.top-toc > ul > li > ul {
 	display: none; // Prevent <h2> and beyond being generated
 }
