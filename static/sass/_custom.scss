@@ -1,0 +1,115 @@
+// ==== Bootstrap === // 
+	// Import Bootstrap Compass integration
+	@import "bootstrap-compass";
+
+	// Import custom Bootstrap variables
+	@import "_bootstrap-variables";
+
+	// Import Bootstrap for Sass
+	@import "bootstrap";
+
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+	position: relative; //For scrollspy to work
+}
+
+// Floating submenu (using Table of Contents)
+div.top-toc { 
+	background: $pink;
+	line-height: 2;
+	&.affix { // For when it floats
+		display: block;
+		z-index: 999;
+		top: 0;
+		margin: 0;
+		width: 100%;
+	}
+}
+div.top-toc { // For when it's fixed
+	margin-top: -50px;
+	margin-bottom: 20px;
+}
+// So the submenu jumps go above the headers
+nav.top-toc > ul > li { 
+	z-index: 999;
+}
+
+.content h1:before {
+  display: block;
+  content: " ";
+  margin-top: -(61px + $fs_section-heading); /* negative fixed header height */
+  height: 61px + $fs_section-heading; /* fixed header height*/
+  visibility: hidden;
+}
+// Pretty submenu things
+nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
+.to-top > ul, {
+	@extend .nav, .nav-pills, .nav-justified; //So much Bootstrap! >_<
+	@include sans-serif-font;
+}
+.to-top > ul > li { //Make the "top" icon do what the text does without looking terrible
+	> a:hover,
+	> a:focus {
+		color: $rose;
+		background: none;
+	}
+	> a:focus {
+		color: $gray-dark; 
+	}
+}
+nav.top-toc > ul {
+	> li.active > a,
+	> li:hover, > li > a:hover,
+	> li:focus, > li > a:focus,
+	> li.active:hover, > li.active > a:hover,
+	> li.active:focus, > li.active > a:focus, { // I'm sure there's a way to not use so many selectors...
+		background-color: $rose;
+		color: $gray-dark;
+	}
+}
+
+nav.top-toc > ul > li > ul {
+	display: none; // Prevent <h2> and beyond being generated
+}
+
+// Table of Contents on the side of articles
+
+#TableOfContents .side-toc {
+	@include sans-serif-font;
+	font-size: 18px;
+	ul {
+		list-style-type: none;
+		line-height: 4;
+		a {
+			color: $gray-light;
+		}
+	}
+}
+// Striping on home page
+
+.home-banner:nth-of-type(even){
+	background: pink;
+	color: $gray-light;
+}
+
+// Nav bar adjustments
+.navbar-brand {
+	font-size: $fs_body;
+	margin-left: 30px !important;
+}
+.nav {
+	margin-right: 30px;
+}
+
+// For white-on-white text readability
+.site-heading,
+.page-heading,
+.post-heading {
+	@include black-font-border;
+}
+
+.center {
+	text-align: center;
+}
