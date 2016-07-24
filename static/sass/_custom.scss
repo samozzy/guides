@@ -113,6 +113,9 @@ nav.top-toc > ul > li > ul {
 	@include black-font-border;
 }
 
-.center {
-	text-align: center;
+// Footer and copyright text
+footer .copyright {
+	line-height: 1.5;
+	text-align: left !important; // Override bootstrap
 }
+

@@ -2,6 +2,7 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-gb"
 title = "GirlGuiding Beeston"
 publishdir = "public"
+copyright = "&copy; 2016 GirlGuiding"
 
 #Theme requirements
 [author]
@@ -18,15 +19,12 @@ publishdir = "public"
   tag = "tags"
   category = "categories"
 
-# [[params.social]]
-#   title = "twitter"
-#   url = "https://twitter.com/humboldtux"
-# [[params.social]]
-#   title = "github"
-#   url = "https://github.com/humboldtux"
-# [[params.social]]
-#   title = "facebook"
-#   url = "https://www.facebook.com/FACEBOOKHANDLE"
+[[params.social]]
+  title = "facebook"
+  url = "https://www.facebook.com/beestongirlguiding"
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/ggbeeston"
 
 [[menu.main]]
   name = "home"
@@ -38,4 +36,4 @@ publishdir = "public"
   weight = 2
 
 [blackfriday]
-  plainIDAnchors = true
+  plainIDAnchors = true #Now true by default in Hugo 0.16. Will be removed when Travis uses this version (TBC)
