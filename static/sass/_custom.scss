@@ -1,0 +1,76 @@
+// ==== Bootstrap === // 
+	// Import Bootstrap Compass integration
+	@import "bootstrap-compass";
+
+	// Import custom Bootstrap variables
+	@import "bootstrap-variables";
+
+	// Import Bootstrap for Sass
+	@import "bootstrap";
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// Table of Contents
+.top-toc{ 
+	margin-top: -50px;
+	margin-bottom: 20px;
+	background: pink;
+	line-height: 2;
+}
+
+nav.toc > ul,
+.to-top > ul {
+	@extend nav, .nav, .nav-pills, .nav-justified, .nav:before, .nav:after; //So much Bootstrap! >_<
+	li {
+		// text-transform: uppercase;
+		@include sans-serif-font;
+	}
+}
+
+nav.top-toc > ul > li > ul {
+	display: none; // Prevent <h2> and beyond being generated
+}
+
+// Table of Contents on the side of articles
+
+.side-toc {
+	@include sans-serif-font;
+	font-size: 18px;
+	ul, ul ul {
+		list-style-type: none;
+		line-height: 4;
+		a {
+			color: $gray-light;
+		}
+	}
+	&.affix {
+		top:40px !important;
+	}
+}
+// Striping on home page
+
+.home-banner:nth-of-type(even){
+	background: pink;
+	color: $gray-light;
+}
+
+// Nav bar adjustments
+.navbar-brand {
+	font-size: $fs_body;
+	margin-left: 30px !important;
+}
+.nav {
+	margin-right: 30px;
+}
+
+// For white-on-white text readability
+.site-heading,
+.page-heading,
+.post-heading {
+	@include black-font-border;
+}
+
+.center {
+	text-align: center;
+}
+
