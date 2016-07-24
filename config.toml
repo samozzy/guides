@@ -1,6 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-gb"
 title = "GirlGuiding Beeston"
+publishdir = "public"
 
 #Theme requirements
 [author]
@@ -10,7 +11,7 @@ title = "GirlGuiding Beeston"
   DateForm = "2 January, 2006"
   Description = "GirlGuiding Beeston Division is part of GirlGuiding – the leading charity for girls and young women in the UK."
   Author = "Sam Osborne"
-  # email = "benoit.benedetti@gmail.com"
+  email = "test@example.com"
   # Ganalytics = "XX-00000000-0"
 
 [taxonomies]
@@ -35,3 +36,6 @@ title = "GirlGuiding Beeston"
   name = "News Posts"
   url = "/news/"
   weight = 2
+
+[blackfriday]
+  plainIDAnchors = true
