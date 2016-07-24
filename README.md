@@ -1,5 +1,8 @@
 # Beeston Girl Guiding
 
+
+[![Build Status](https://travis-ci.org/samozzy/guides.svg?branch=master)](https://travis-ci.org/samozzy/guides)
+
 Static site for Beeston Girl Guiding Divisions.
 To replace website currently at: [beestongirlguiding.org.uk](http://beestongirlguiding.org.uk), constructed with BT Community Web Kit.
 
