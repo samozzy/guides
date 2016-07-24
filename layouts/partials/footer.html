@@ -3,8 +3,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                  <ul class="list-inline text-center">
+                <div class="col-md-5 col-md-offset-1 copyright">
+                  <span class="text-muted">{{ .Site.Copyright | safeHTML }}</span>
+                </div>
+                <div class="col-md-5">
+                  <ul class="list-inline text-right">
                     <li>
                       <a href="mailto:{{ .Site.Params.email }}">
                         <span class="fa-stack fa-lg">
@@ -14,18 +17,16 @@
                       </a>
                     </li>
                     {{ range .Site.Params.social }}
-                    <li>
-                      <a href="{{ .url }}">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-{{ .title }} fa-stack-1x fa-inverse"></i>
-                        </span>
-                      </a>
-                    </li>
+                        <li>
+                          <a href="{{ .url }}">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-{{ .title }} fa-stack-1x fa-inverse"></i>
+                            </span>
+                          </a>
+                        </li>
                     {{ end }}
                   </ul>
-                  <p class="copyright text-muted">{{ .Site.Copyright }}</p>
-                  <p>&copy; 2016</p>
                 </div>
             </div>
         </div>
