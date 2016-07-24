@@ -76,15 +76,18 @@ nav.top-toc > ul > li > ul {
 
 // Table of Contents on the side of articles
 
-#TableOfContents .side-toc {
+.side-toc {
 	@include sans-serif-font;
 	font-size: 18px;
-	ul {
+	ul, ul ul {
 		list-style-type: none;
 		line-height: 4;
 		a {
 			color: $gray-light;
 		}
+	}
+	&.affix {
+		top:40px !important;
 	}
 }
 // Striping on home page
