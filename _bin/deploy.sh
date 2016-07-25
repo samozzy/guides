@@ -9,19 +9,23 @@
 # 	then 
 # 		BRANCH="content"; 
 # 		TARGET="master";
-# elif [ "$TRAVIS_BRANCH" == "master" ]; 
-# 	then 
-# 		BRANCH="master";	
-# 		TARGET="gh-pages";
-# fi
+#elif
+if [ "$TRAVIS_BRANCH" == "master" ]; 
+	then 
+		BRANCH="master";	
+		TARGET="gh-pages";
+	else 
+		exit 0;
+fi
 
-if [ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_COMMIT" == "true" && "$TRAVIS_PULL_REQUEST" == "false" ]; then
+if [ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_COMMIT" == "true" && "$TRAVIS_PULL_REQUEST" == "false" ]; 
+	then
 		CONT="true";
 else
 	exit 0; #If we aren't deploying, run away. We are only deploying for commits to /master and /content
 fi 
 
-if "CONT" = "true" then
+if [ "CONT" = "true" ]; then
 	git clone -b $TARGET https://${GH_TOKEN}@${GH_REF} $TARGET #Get the target branch
 	rm -rf $TARGET
 	cp -R public/* $TARGET #Copy the Hugo output to the new location
