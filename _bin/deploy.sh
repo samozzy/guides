@@ -15,7 +15,7 @@
 # 		TARGET="gh-pages";
 # fi
 
-if ["$TRAVIS_BRANCH" == "master" && "$TRAVIS_COMMIT" = "true" && "$TRAVIS_PULL_REQUEST" = "false" ]; then
+if [ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_COMMIT" == "true" && "$TRAVIS_PULL_REQUEST" == "false" ]; then
 	then
 		CONT="true";
 else
