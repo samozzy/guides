@@ -16,7 +16,6 @@
 # fi
 
 if [ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_COMMIT" == "true" && "$TRAVIS_PULL_REQUEST" == "false" ]; then
-	then
 		CONT="true";
 else
 	exit 0; #If we aren't deploying, run away. We are only deploying for commits to /master and /content
