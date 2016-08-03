@@ -93,7 +93,7 @@ nav.top-toc > ul > li > ul {
 // Striping on home page
 
 .home-banner:nth-of-type(even){
-	background: pink;
+	background: $pink;
 	color: $gray-light;
 }
 
