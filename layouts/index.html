@@ -4,10 +4,9 @@
     <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/home-bg.jpg')">
      <div class="container">
        <div class="row">
-         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+         <div class="col-md-10 col-md-offset-1">
            <div class="site-heading">
              <h1>{{ .Site.Title }}</h1>
-             <!-- <h2>This is the home page<h2> -->
              <hr class="small">
              {{ if isset .Site.Params "Description" }}<span class="subheading">{{ .Site.Params.Description | markdownify }}</span>{{ end }}
            </div>
@@ -16,106 +15,126 @@
      </div>
     </header>
     {{ partial "toc.html" . }}
+    <!-- Main Content -->
     <div class="home-banner">
+    <!--Top Title header, section 1 -->
       <div class="container">
-      <!-- Main Content -->
-      <!--Top Title header -->
         <div class="row">
-          <div class="col-lg-offset-1 col-lg-10 col-md-8">
-
-            <h1 class="text-center"> Welcome to the website</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+          <div class="col-md-offset-1 col-md-10 col-xs-12">
+            <h1 class="text-center">GirlGuiding opens a world of opportunities that will last a lifetime.</h1>
+            <p>Beeston Division has over 650 members across 30 groups in the Attenborough, Beeston, Chilwell and Toton areas. Our members are of all ages, spanning our Rainbows, Brownies, Guides, Senior Section and adult volunteers - including many students from the University of Nottingham.</p>
+            <p>Being a member of Girlguiding opens a world of opportunities that will last a lifetime. It provides a safe, girl-only space to explore activities, issues and possibilities that are available to girls today.</p>
+            <p>We are a friendly, forward looking division and our aim is to provide the best guiding and life opportunities for all our members. This is made possible by the enthusiasm and efforts of our many volunteers – no contribution is too small.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="home-banner">
+    <!-- We do this; 3-way split, section 2 -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <h2>Girls get their own space</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="col-md-4">
+            <h2>We provide girls their own space</h2>
+            <p>We give girls a place where they can really be themselves with other girls and share the experience of growing up as a girl in today’s world.</p>
+            <p>We provide a safe, non-judgemental environment where girls can explore the issues they care about while having lots of fun, enjoying new experiences and learning vital skills.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <h2>We are for all girls</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>We are for all girls and young women, whatever their background and circumstances. We offer them fun, exciting activities and the chance to make lifelong friends.</p>
+            <p>You’ll find us in many communities, helping to give girls a head start in life and encouraging them to be happy, self-confident and curious about the world they live in and the difference they can make.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <h2>We give girls a voice</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>We give girls the confidence, skills and information to make informed decisions.</p>
+            <p>We offer a supportive, inclusive and exciting environment where they can reach their own conclusions about the world.</p>
+            <p>We show them how they can speak out and take positive action to improve their lives and the lives of others.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <blockquote><h3>"We play games, we celebrate things, we write in our books, we play on the computer, we do painting…" <small>Fareeha, 6</small></h3></blockquote>
           </div>
         </div>
       </div>
     </div>
     <div class="home-banner">
+    <!-- Group summary; 4-way split, section 3 -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-10">
+          <div class="col-xs-12 ">
             <h2 class="text-center">Our groups</h2>
           </div>
         </div>
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6">
+            <h3>Rainbows</h3> <a href='{{relref . "groups.md#rainbows" }}' class="btn btn-primary" role="button" >Read more...</a>
+            <p>GirlGuiding starts aged 5 with our youngest group. Rainbows play games, have parties, make things and enjoy the outdoors while developing life skills.</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h3>Brownies</h3><a href='{{relref . "groups.md#brownies" }}' class="btn btn-primary" role="button" >Read more...</a>
+            <p>Brownies do it all! From ages 7-10, Brownies make up and take on their own challenges, as well as playing fun games.</p>
+          </div>
+          <div class="clearfix visible-sm-block"></div>
+          <div class="col-md-3 col-sm-6">
+            <h3>Guides</h3><a href='{{relref . "groups.md#guides" }}' class="btn btn-primary" role="button" >Read more...</a>
+            <p>Being a Guide encourages girls aged 10-14 to develop by undertaking challenges and pushing the boundaries of their experience.</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h3>Senior Section</h3><a href='{{relref . "groups.md#seniors" }}' class="btn btn-primary" role="button" >Read more...</a>
+            <p>For anyone 14-25, the Senior Section offers young women an exciting and flexible programme with a huge variety of challenges and opportunities for personal development.</p>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-md-3">
-            <h3>Rainbows</h3>
-            <p>The youngest girls</p>
-          </div>
-          <div class="col-md-3">
-            <h3>Brownies</h3>
-            <p>The middle group</p>
-          </div>
-          <div class="col-md-3">
-            <h3>Guides</h3>
-            <p>The oldest group</p>
-          </div>
-          <div class="col-md-3">
-            <h3>Senior Section</h3>
-            <p>The old timers</p>
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <blockquote><h3>"It feels nice to be part of a group of girls who help each other and are friendly. It makes me feel special. I'd hate there to be boys at Brownies!" <small>Heather, 10</small></h3></blockquote>
           </div>
         </div>
       </div>
     </div>
     <div class="home-banner">
+    <!-- Adults, section 4 -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
+          <div class="col-xs-12">
 
             {{ partial "homepage/2-mid.html" . }}
   
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <blockquote><h3>'Guiding has helped me become the person I am today, which is a confident and outspoken girl!' <small>Dawn, 17</small></h3></blockquote>
           </div>
         </div>
       </div>
     </div>
     <!--Lower Title header -->
     <div class="home-banner">
+    <!-- Volunteers, section 5 -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
+          <div class="col-xs-12">
 
             {{ partial "homepage/3-bottom.html" . }}
   
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <blockquote><h3>"After studying English at university, I decided I wanted to teach. My experience within guiding helped me to gain a place on one of the best teaching courses and now I am teaching English to Guide age and above!" <small>Komal, GirlGuiding Beeston Leader</small></h3></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-banner">
+    <!-- Interested?, section 6 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
+            <h2>Interested in getting involved?</h2>
+            <p>Either contact us, or drop into Beeston HQ, to find out more and join the GirlGuiding family. Whether a Rainbow, Brownie, Guide, Senior, or adult volunteer it's never too late.</p>
+          </div>
+        </div> 
       </div>
     </div>
     <!-- End Main Content -->

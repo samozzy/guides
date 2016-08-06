@@ -15,7 +15,7 @@
                     </li>
                     {{ range .Site.Params.social }}
                         <li>
-                          <a href="{{ .url }}">
+                          <a href="{{ .url }}" target="_blank">
                             <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-{{ .title }} fa-stack-1x fa-inverse"></i>
@@ -38,7 +38,8 @@
                     </ul>
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-12 copyright">
-                  <span>{{ .Site.Copyright | safeHTML }}</span>
+                  <span>{{ .Site.Copyright | safeHTML }}</span><br />
+                  <span>Registered Charity No. 306016</span>
                 </div>
             </div>
         </div>

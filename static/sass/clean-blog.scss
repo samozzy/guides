@@ -1,3 +1,10 @@
+// Remaining mixins
+@import '_mixins.scss';
+
+// Custom bits
+@import '_variables.scss';
+@import '_custom.scss';
+
 // ==== Bootstrap === // 
 	// Import Bootstrap Compass integration
 	@import "bootstrap-compass";
@@ -11,17 +18,12 @@
 // Compass (for compiling scss)
 // @import "compass/reset";
 
-// Remaining mixins
-@import '_variables.scss';
-@import '_mixins.scss';
 
-// Custom bits
-@import '_custom.scss';
 
 // Global Components
 
 body {
-	@include serif-font;
+	@include sans-serif-font;
 	font-size: $fs_body;
 	color: $gray-dark;
 	-webkit-tap-highlight-color: $theme-primary; 
@@ -391,29 +393,30 @@ form .row:first-child .floating-label-form-group {
 
 // Button Styles
 
-.btn {
-	@include sans-serif-font;
-	text-transform: uppercase;
-	font-size: $font-size-base;
-	font-weight: 800;
-	letter-spacing: 1px;
-	border-radius: 0;
-	padding: 15px 25px;
-}
+// .btn {
+// 	@include sans-serif-font;
+// 	text-transform: uppercase;
+// 	font-size: $font-size-base;
+// 	font-weight: bold;
+// 	text-decoration: none;
+// 	letter-spacing: 1px;
+// 	border-radius: 0;
+// 	padding: 15px 15px;
+// }
 
-.btn-lg {
-	font-size: 1.15 * $font-size-base;
-	padding: 25px 35px;
-}
+// .btn-lg {
+// 	font-size: 1.15 * $font-size-base;
+// 	padding: 25px 35px;
+// }
 
-.btn-default {
-	&:hover,
-	&:focus {
-		background-color: $theme-primary;
-		border: 1px solid $theme-primary;
-		color: $white;
-	}
-}
+// .btn-default {
+// 	&:hover,
+// 	&:focus {
+// 		background-color: $theme-primary;
+// 		border: 1px solid $theme-primary;
+// 		color: $white;
+// 	}
+// }
 
 // Pager Styling
 
