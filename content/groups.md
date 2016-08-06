@@ -2,7 +2,7 @@
 author = []
 date = "2016-08-06T01:17:01+01:00"
 description = ""
-draft = true
+draft = false
 image = "/img/about-bg.jpg"
 tags = []
 title = "Our Groups"
