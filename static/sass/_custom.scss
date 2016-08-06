@@ -14,10 +14,18 @@
 body {
 	position: relative; //For scrollspy to work
 }
+blockquote footer {
+	padding: 10px 0 0 0;
+}
+
+a.btn {
+	text-decoration: none;
+	font-weight: bold;
+}
 
 // Floating submenu (using Table of Contents)
 div.top-toc { 
-	background: $pink;
+	background: $ggBlue;
 	line-height: 2;
 	&.affix { // For when it floats
 		display: block;
@@ -34,6 +42,9 @@ div.top-toc { // For when it's fixed
 // So the submenu jumps go above the headers
 nav.top-toc > ul > li { 
 	z-index: 999;
+	> a {
+		color: $gray-darker;
+	}
 }
 
 .content h1:before {
@@ -52,11 +63,11 @@ nav.top-toc > ul, //Make the submenu look like a navbar, without using the world
 .to-top > ul > li { //Make the "top" icon do what the text does without looking terrible
 	> a:hover,
 	> a:focus {
-		color: $rose;
+		color: $lightBlue;
 		background: none;
 	}
 	> a:focus {
-		color: $gray-dark; 
+		color: $gray-lighter; // Overwrite the above
 	}
 }
 nav.top-toc > ul {
@@ -65,8 +76,8 @@ nav.top-toc > ul {
 	> li:focus, > li > a:focus,
 	> li.active:hover, > li.active > a:hover,
 	> li.active:focus, > li.active > a:focus, { // I'm sure there's a way to not use so many selectors...
-		background-color: $rose;
-		color: $gray-dark;
+		background-color: $lightBlue;
+		color: $gray-lighter;
 	}
 }
 
@@ -92,9 +103,12 @@ nav.top-toc > ul > li > ul {
 }
 // Striping on home page
 
-.home-banner:nth-of-type(even){
-	background: $pink;
-	color: $gray-light;
+.home-banner:nth-of-type(even) {
+	background: $ggBlue;
+	color: $white;
+	blockquote * {
+		color: $white;
+	}
 }
 
 // Nav bar adjustments
@@ -127,4 +141,3 @@ footer {
 		color: inherit;
 	}
 }
-
