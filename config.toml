@@ -1,8 +1,8 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-gb"
-title = "GirlGuiding Beeston"
+title = "Girlguiding Beeston"
 publishdir = "public"
-copyright = "&copy; 2016 GirlGuiding"
+copyright = "&copy; 2016 Girlguiding"
 
 #Theme requirements
 [author]
@@ -10,7 +10,7 @@ copyright = "&copy; 2016 GirlGuiding"
 
 [params]
   DateForm = "2 January, 2006"
-  Description = "GirlGuiding Beeston Division is part of GirlGuiding – the leading charity for girls and young women in the UK."
+  Description = "Girlguiding Beeston Division is part of Girlguiding – the leading charity for girls and young women in the UK."
   Author = "Sam Osborne"
   email = "test@example.com"
   # Ganalytics = "XX-00000000-0"
@@ -21,7 +21,7 @@ copyright = "&copy; 2016 GirlGuiding"
 
 [[params.social]]
   title = "facebook"
-  url = "https://www.facebook.com/beestongirlguiding"
+  url = "https://www.facebook.com/beestonGirlguiding"
 [[params.social]]
   title = "twitter"
   url = "https://twitter.com/ggbeeston"
