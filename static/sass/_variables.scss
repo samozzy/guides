@@ -1,15 +1,51 @@
 // Variables
 
-// GirlGuiding Logo Colours
-$ggPink: #C40063;
-$ggBlue: #4E89C7;
-$lightBlue: lighten($ggBlue, 15%);
+// Primary
+	$ggBlue: #4E88C7;
+	$ggRasp: #C40063;
 
-// Gray and Brand Colors for use across theme
+	// Tints
+	$lightBlue: rgb(131,171,216);
+	$lightestBlue: rgb(220,231,244);
+	$lightRasp: rgb(214,76,145);
+	$lightestRasp: rgb(243,204,224);
 
-$brand-primary: 	 $ggPink;
+// Secondary and Tints
+	$secBlue: #0072bc; $lightBlue: rgb(76,156,208);  $lightestBlue: rgb(204,227,242);
+	$secRed: #ef3f30; $lightRed: rgb(244,122,110); $lightestRed: rgb(252,217,214);
+	$secYellow: #ffd400; $lightYellow: rgb(255,233,127);
+	$secGrey: #a7a9ac; $lightGrey: rgb(211,212,213); 
+	$secTeal: #009dad; $lightTeal: rgb(76,186,197); $lightestTeal: rgb(204,235,239);
+	$secPurple: #8b52a1; $lightPurple: rgb(174,134,189); $lightestPurple: rgb(232,220,236);
+	$secOrange: #f78e1e; $lightOrange: rgb(249,176,97); $lightestOrange: rgb(253,232,210);
+	$secGreen: #72bf44; $lightGreen: rgb(156,210,124); $lightestGreen: rgb(227,242,218);
+
+// Groups (tints are in the style guide but not here)
+	// Rainbows
+		$priRainB: #abe1fa;
+		$priRainR: $secRed;
+		$secRainY: $secYellow;
+		$secRainB: #00aeef;
+	// Brownies
+		$priBroY: $secYellow;
+		$priBroBr: #7c5c23;
+		$secBroBl: #aecde3;
+		$secBroP: #f6adcd;
+	// Guides
+		$priGuiB: $secBlue;
+		$priGuiR: #ed1c24;
+		$secGuiP: $secPurple;
+		$secGuiG: $secGreen;
+	// Senior Section
+		$priSenB: $secTeal;
+		$priSenG: $secGrey;
+		$priSenO: $secOrange;
+		$priSenM: #ec008c;
+
+$brand-primary: 	 $ggRasp;
 $theme-primary:    $brand-primary;
 
+// Grays
 $gray-base:        #000; //Basically black
 $gray-darker:      lighten($gray-base, 13.5%); // #222 - light black
 $gray-dark:        lighten($gray-base, 20%);   // #333 - black/grey
@@ -19,6 +55,7 @@ $gray-lighter:     lighten($gray-base, 93.5%); // #eee - basically white
 
 // Colors to ensure 'correctness'
 $white: #FFF;
+$black: #000;
 $pink: pink;
 $rose: #FFE3E8;
 
