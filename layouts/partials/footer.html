@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm" id="footer_social">
                   <ul class="list-inline">
-                    <li>
+                    <li class="footer_icons">
                       <a href="mailto:{{ .Site.Params.email }}">
                         <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
@@ -14,7 +14,7 @@
                       </a>
                     </li>
                     {{ range .Site.Params.social }}
-                        <li>
+                        <li class="footer_icons">
                           <a href="{{ .url }}" target="_blank">
                             <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>

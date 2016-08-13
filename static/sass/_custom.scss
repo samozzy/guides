@@ -14,8 +14,14 @@
 body {
 	position: relative; //For scrollspy to work
 }
-blockquote footer {
+blockquote {
+	border-color: $ggRasp;
+	small {
+		color: $ggRasp; 
+	}
+	footer {
 	padding: 10px 0 0 0;
+	}
 }
 
 a.btn {
@@ -108,6 +114,9 @@ nav.top-toc > ul > li > ul {
 	color: $white;
 	blockquote * {
 		color: $white;
+		small {
+			color: $ggRasp;
+		}
 	}
 }
 
@@ -136,8 +145,21 @@ footer {
 		@extend .text-muted;
 		line-height: 1.5;
 		text-align: left !important; // Override bootstrap
+		color: $ggRasp;
 	}
 	a:hover, a:focus {
-		color: inherit;
+		color: $lightRasp;
+		text-decoration: none;
+	}
+}
+
+li.footer_icons {
+	.fa-circle {
+		color: $ggRasp;
+	}
+	:hover {
+		.fa-circle {
+			color: $lightRasp;
+		}
 	}
 }
