@@ -49,10 +49,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand visible-xs-block visible-sm-block" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-                <a class="visible-md-block visible-lg-block" href="{{ .Site.BaseURL }}"><div class="head-logo"></div></a>
+                <a href="{{ .Site.BaseURL }}"><div class="head-logo pull-left"></div></a>
+                <a class="navbar-brand pull-left visible-xs-block" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                <a class="navbar-brand pull-left visible-md-block visible-lg-block visible-shrink" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
             </div>
-
             {{ partial "navbar.html" . }}
         </div>
         <!-- /.container -->

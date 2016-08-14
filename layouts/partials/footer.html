@@ -67,13 +67,19 @@
         })
     })
     </script>
-    <!-- Make the header shrink (and the logo) -->
+    <!-- Make the header logo shrink (and the .Site.Title disappear) -->
     <script>
         $(window).scroll(function() {
-          if ($(document).scrollTop() > 1) {
+          if ($(document).scrollTop() > 5) {
             $('nav.navbar').addClass('shrink');
           } else {
             $('nav.navbar').removeClass('shrink');
+          }
+          if ($(document).scrollTop() > 50) { // Stop the .Site.Title from jumping around
+            $('.visible-shrink').addClass('shrink');
+          }
+          else {
+            $('.visible-shrink').removeClass('shrink');            
           }
         });
     </script>

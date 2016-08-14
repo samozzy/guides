@@ -29,23 +29,32 @@ a.btn {
 	font-weight: bold;
 }
 .head-logo {
-	transition: all 1s !important;
-	background: url('../img/branding/ggse.jpg') no-repeat;
+	@include transition-all(all);
+	background: url('../img/branding/ggse-head.png') no-repeat;
 	background-size: 100%;
-	height: 200px;
+	margin-top: 30px;
+	height: 170px;
 	width: 250px;
-}
-.navbar.shrink {
-	.head-logo {
+	@media only screen and (max-width: 992px) { //For when the toggle menu arrives
 		height: 60px;
 		width: 92px;
+		margin-top: 0;
+		margin-left: 30px;
 	}
 }
-// .navbar {
-// 	-webkit-transition: all 0.4s ease;
-//   transition: all 0.4s ease;
-//   height: 100px;
-// }
+.navbar.shrink .head-logo {
+	height: 60px;
+	width: 92px;
+	margin-top: 0;
+}
+.visible-shrink { // Only visible when 'shrink' is active.
+	// visibility: hidden;
+	display: none !Important;
+	&.shrink {
+		// visibility: visible;
+		display: block !important;
+	}
+}
 
 // Floating submenu (using Table of Contents)
 div.top-toc { 
