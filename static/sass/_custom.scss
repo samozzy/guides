@@ -28,6 +28,24 @@ a.btn {
 	text-decoration: none;
 	font-weight: bold;
 }
+.head-logo {
+	transition: all 1s !important;
+	background: url('../img/branding/ggse.jpg') no-repeat;
+	background-size: 100%;
+	height: 200px;
+	width: 250px;
+}
+.navbar.shrink {
+	.head-logo {
+		height: 60px;
+		width: 92px;
+	}
+}
+// .navbar {
+// 	-webkit-transition: all 0.4s ease;
+//   transition: all 0.4s ease;
+//   height: 100px;
+// }
 
 // Floating submenu (using Table of Contents)
 div.top-toc { 
@@ -152,7 +170,7 @@ footer {
 		text-decoration: none;
 	}
 }
-
+// Social icon adjustment
 li.footer_icons {
 	.fa-circle {
 		color: $ggRasp;
@@ -160,6 +178,15 @@ li.footer_icons {
 	:hover {
 		.fa-circle {
 			color: $lightRasp;
+		}
+	}
+}
+
+// clean-blog overrides
+a {
+	img {
+		&:hover, &:focus {
+			cursor: auto !important;
 		}
 	}
 }
