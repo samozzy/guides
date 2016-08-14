@@ -14,13 +14,51 @@
 body {
 	position: relative; //For scrollspy to work
 }
-blockquote footer {
+blockquote {
+	border-color: $ggRasp;
+	small {
+		color: $ggRasp; 
+	}
+	footer {
 	padding: 10px 0 0 0;
+	}
 }
 
 a.btn {
 	text-decoration: none;
 	font-weight: bold;
+}
+// Nav bar
+.head-logo { // Logo in the top left
+	@include transition-all(all);
+	background: url('../img/branding/ggse-head.png') no-repeat;
+	background-size: 100%;
+	margin-top: 30px;
+	height: 170px;
+	width: 250px;
+	@media only screen and (max-width: 992px) { //For the toggle menu and to prevent overlap
+		height: 60px;
+		width: 92px;
+		margin: 0 0 0 30px;
+	}
+}
+.navbar.shrink .head-logo { // Make the logo smaller when we scroll, so it fits in the incoming menu
+	height: 60px;
+	width: 92px;
+	margin-top: 0;
+}
+.navbar-custom {
+	@media (max-width: 768px) { // Keep the toggle menu always visible
+		position: fixed !important;
+	}
+	@media only screen and (min-width: 768px) { // Make .Site.Title only visible in the floating menu
+		.visible-shrink { // Only visible when 'shrink' is active. 
+			display: none !Important;
+			&.shrink {
+				display: block !important;
+			}
+		}
+	}
 }
 
 // Floating submenu (using Table of Contents)
@@ -108,6 +146,9 @@ nav.top-toc > ul > li > ul {
 	color: $white;
 	blockquote * {
 		color: $white;
+		small {
+			color: $ggRasp;
+		}
 	}
 }
 
@@ -136,8 +177,30 @@ footer {
 		@extend .text-muted;
 		line-height: 1.5;
 		text-align: left !important; // Override bootstrap
+		color: $ggRasp;
 	}
 	a:hover, a:focus {
-		color: inherit;
+		color: $lightRasp;
+		text-decoration: none;
+	}
+}
+// Social icon adjustment
+li.footer_icons {
+	.fa-circle {
+		color: $ggRasp;
+	}
+	:hover {
+		.fa-circle {
+			color: $lightRasp;
+		}
+	}
+}
+
+// clean-blog overrides
+a {
+	img {
+		&:hover, &:focus {
+			cursor: auto !important;
+		}
 	}
 }

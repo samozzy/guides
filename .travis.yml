@@ -21,8 +21,8 @@ script:
  - bin/compass compile -e production --force
  - hugo
  # - bundle exec htmlproof public 
-after_success:
-  - _bin/deploy.sh
+# after_script:
+#   - _bin/deploy.sh
 # branches:
 #   only:
 #   - master

@@ -1,11 +1,10 @@
-# Beeston GirlGuiding
-
+# Beeston Girlguiding
 
 [![Build Status](https://travis-ci.org/samozzy/guides.svg?branch=master)](https://travis-ci.org/samozzy/guides)
 
-Static site for Beeston GirlGuiding Divisions.
+Static site for Beeston Girlguiding Divisions.
 
-To replace website currently at: [beestongirlguiding.org.uk](http://www.beestongirlguiding.org.uk), constructed with BT Community Web Kit.
+To replace website currently at: [beestonGirlguiding.org.uk](http://www.beestongirlguiding.org.uk), constructed with BT Community Web Kit.
 
 ## How?
 New website to be made with Hugo Static Site Generator, and hosted on GitHub.
