@@ -28,31 +28,36 @@ a.btn {
 	text-decoration: none;
 	font-weight: bold;
 }
-.head-logo {
+// Nav bar
+.head-logo { // Logo in the top left
 	@include transition-all(all);
 	background: url('../img/branding/ggse-head.png') no-repeat;
 	background-size: 100%;
 	margin-top: 30px;
 	height: 170px;
 	width: 250px;
-	@media only screen and (max-width: 992px) { //For when the toggle menu arrives
+	@media only screen and (max-width: 992px) { //For the toggle menu and to prevent overlap
 		height: 60px;
 		width: 92px;
-		margin-top: 0;
-		margin-left: 30px;
+		margin: 0 0 0 30px;
 	}
 }
-.navbar.shrink .head-logo {
+.navbar.shrink .head-logo { // Make the logo smaller when we scroll, so it fits in the incoming menu
 	height: 60px;
 	width: 92px;
 	margin-top: 0;
 }
-.visible-shrink { // Only visible when 'shrink' is active.
-	// visibility: hidden;
-	display: none !Important;
-	&.shrink {
-		// visibility: visible;
-		display: block !important;
+.navbar-custom {
+	@media (max-width: 768px) { // Keep the toggle menu always visible
+		position: fixed !important;
+	}
+	@media only screen and (min-width: 768px) { // Make .Site.Title only visible in the floating menu
+		.visible-shrink { // Only visible when 'shrink' is active. 
+			display: none !Important;
+			&.shrink {
+				display: block !important;
+			}
+		}
 	}
 }
 
