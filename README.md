@@ -1,6 +1,5 @@
 # Beeston Girlguiding
 
-
 [![Build Status](https://travis-ci.org/samozzy/guides.svg?branch=master)](https://travis-ci.org/samozzy/guides)
 
 Static site for Beeston Girlguiding Divisions.
