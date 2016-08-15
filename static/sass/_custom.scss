@@ -219,7 +219,7 @@ a {
 .pullquote {
 	&:before {
 		position: relative;
-		content: attr(data-pullquote); 
+		content: attr(data-pullquote);
 		padding: 5px;
 		font-size: $font-size-h3;
 		color: $ggRasp;
@@ -239,10 +239,25 @@ a {
 			@else {
 				float: $side ;
 				margin-#{$side}: 0;
-				border-#{$side}: 5px solid $ggRasp;
+				border-#{$side}: 5px solid $lightestRasp;
 				padding-#{$side}: 10px;
 				text-align: $side;
 				@extend %pullquote-mobile;
+			}
+		}
+	}
+}
+@each $side in left, right, center {
+	hr.pullquote-#{$side} {
+		border-color: $lightestRasp;
+		@if $side == center {
+			width: 20%;
+		}
+		@else {
+			display: none;
+			@media only screen and (max-width: $sm-bs) {
+				width: 20%;
+				display: block;
 			}
 		}
 	}

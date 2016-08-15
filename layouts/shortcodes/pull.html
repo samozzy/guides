@@ -23,6 +23,8 @@
   {{ $pos := $.Scratch.Get "pos" }} <!-- There should be some way of doing this from within the above if scope, but it is escaping me for now -->
   <!-- HTML -->
  	<p class="pullquote pullquote-{{ $pos }}" data-pullquote="{{ $text }}">
- 		{{ .Inner | markdownify }} 
+ 	<hr class="pullquote-{{ $pos }}">
+  	{{ .Inner | markdownify }} 
 	</p>
+  
 {{ end }}
