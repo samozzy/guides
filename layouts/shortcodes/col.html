@@ -1,0 +1,9 @@
+{{ $.Scratch.Set "col" (.Get 0) }}
+{{ $col := $.Scratch.Get "col" }}
+{{ $col := int $col }} <!-- Turn into an int -->
+{{ if and (ge $col 0) (le $col 12) }} <!-- Ensure variable is in range --> 
+	
+		<div class="col-sm-{{ div 12 $col }}"> <!-- This will do nothing if the value is not valid -->
+			{{ .Inner | markdownify }}
+		</div>
+{{ end }}
