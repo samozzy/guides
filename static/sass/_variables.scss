@@ -84,3 +84,8 @@ $fs_caption: 14px;
 // $font-size-h4:            ceil(($font-size-base * 1.25)) // ~18px
 // $font-size-h5:            $font-size-base
 // $font-size-h6:            ceil(($font-size-base * 0.85)) // ~12px
+
+// Bootstrap breakpoints max-width (to be removed with Bootstrap 4)
+$sm-bs: 768px;
+$md-bs: 992px;
+$lg-bs: 1200px;
