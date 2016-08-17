@@ -1,0 +1,12 @@
+{{ $numOfParams := len .Params }}
+{{ if ge $numOfParams 1 }} <!-- Ensure there is a selected group -->
+
+	{{ $section := .Get 0 }} <!-- Get the group -->
+
+	{{ if isset $.Site.Data.groups $section }} <!-- Verify it exists -->
+		{{ range $key, $item := index $.Site.Data.groups $section }}
+			<p>Group: {{ $item.Name }}. Meets on: {{ $item.Day }}s.</p>
+		{{ end }}
+	{{ end }}
+
+{{ end }}
