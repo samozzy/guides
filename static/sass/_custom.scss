@@ -28,6 +28,9 @@ a.btn {
 	text-decoration: none;
 	font-weight: bold;
 }
+a[href^="mailto"] {
+	text-decoration: none;
+}
 // Nav bar
 .head-logo { // Logo in the top left
 	@include transition-all(all);
