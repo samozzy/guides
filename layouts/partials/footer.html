@@ -57,14 +57,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ .Site.BaseURL }}/js/clean-blog.js"></script>
 
-    <script> // Scrollspy on top-toc 
+    <script> // Scrollspy on top-toc (highlight active section)
     $(document).ready(function() { 
         $("#TableOfContents > ul").addClass("nav");
         $("#TableOfContents > ul > li > a").addClass("scr-a");
-        $('body').scrollspy({ selector: '.scr-a' });
+        $('body').scrollspy({ selector: '.scr-a', offset: 91 });
         $(".top-toc").mouseup(function(){ // Don't hold focus of menu item
            $(this).blur();
-        })
+        });
     })
     </script>
     <!-- Make the header logo shrink (and the .Site.Title disappear) -->
@@ -166,7 +166,7 @@
             var $target = $(target);
 
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
+                'scrollTop': $target.offset().top - 91 // Don't let top-toc go on top of the h1
             }, 900, 'swing', function () {
                 window.location.hash = target;
             });

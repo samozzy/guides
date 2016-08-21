@@ -95,16 +95,10 @@ div.top-toc { // For when it's fixed
 nav.top-toc > ul > li { 
 	> a {
 		color: $gray-darker;
+		white-space: nowrap;
 	}
 }
 
-.content h1:before {
-  display: block;
-  content: " ";
-  margin-top: -(61px + $fs_section-heading); /* negative fixed header height */
-  height: 61px + $fs_section-heading; /* fixed header height*/
-  visibility: hidden;
-}
 // Pretty submenu things
 nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
 .to-top > ul, {
