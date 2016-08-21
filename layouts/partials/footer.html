@@ -179,7 +179,54 @@
     }
     window.setTimeout(offsetAnchor, 1); // Let the page go to the #anchor first
     </script>
-
+    <script> // Google Maps
+    function initMap() {
+        var hq = {lat: 52.9223292, lng: -1.2160224};
+        var gmap = new google.maps.Map(document.getElementById('map'), {
+          center: hq,
+          zoom: 17,
+          // Control buttons
+          mapTypeControl: false,
+          zoomControl: true,
+          zoomControlOptions: {position: google.maps.ControlPosition.LEFT_CENTER},
+          scaleControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
+          // Pretty things
+          styles:
+            [
+              {
+                "elementType": "labels.text.fill", //Text
+                "stylers": [
+                  { "color": "#C40063" }
+                ]
+              },{
+                "featureType": "landscape", //Rest!
+                "elementType": "geometry.fill",
+                "stylers": [
+                  { "color": "#DCE7F4" }
+                ]
+              }
+            ]
+        });
+        var marker = new google.maps.Marker({ // Put the pin on
+            position: hq,
+            map: gmap,
+            title: 'Beeston HQ', //Hover text
+        });
+        
+        // Info window
+        var infocontent = '<h4>Beeston HQ</h4>';
+        var infowindow = new google.maps.InfoWindow({ content: infocontent });
+        infowindow.open(map, marker); //Auto appear
+        marker.addListener('click', function() {
+            infowindow.open(map, marker); //Click the marker to make it appear if closed
+        });
+    }
+    </script>
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl64bhjcpxtwBxXkgkMIhA96_CGTyId9s&callback=initMap">
+    </script>
     {{ if isset .Site.Params "Ganalytics" }}{{ partial "ga.html" . }}{{ end }}
 
 </body>
