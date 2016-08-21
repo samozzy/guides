@@ -172,6 +172,12 @@
             });
         });
       });
+    function offsetAnchor() {
+        if(location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 91); //Let the anchors land below top-toc
+        }
+    }
+    window.setTimeout(offsetAnchor, 1); // Let the page go to the #anchor first
     </script>
 
     {{ if isset .Site.Params "Ganalytics" }}{{ partial "ga.html" . }}{{ end }}
