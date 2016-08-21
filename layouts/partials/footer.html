@@ -151,6 +151,11 @@
                 );
             });
         });
+        $(document).ready(function () { // When we expand a panel, change the glyphicon like magic
+            $('.collapsea').click(function () {
+                $(this).children(":first").toggleClass("glyphicon-menu-down").toggleClass("glyphicon-menu-right");
+            });
+        });
     </script> 
     <script>
       $(document).ready(function(){ // Make the pages go zoom
