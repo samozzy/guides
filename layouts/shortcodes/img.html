@@ -1,0 +1,29 @@
+{{ $numOfParams := len .Params }}
+{{ if and (ge $numOfParams 1) (le $numOfParams 4) }}
+  {{ $.Scratch.Set "img" (.Get 0) }} 
+  {{ if ge $numOfParams 2 }}
+    {{ $.Scratch.Set "pos" (.Get 1) }} <!-- Get the position-->
+  {{ else }}
+    {{ $.Scratch.Set "pos" "right" }} <!-- Default value -->
+  {{ end }}
+  {{ if ge $numOfParams 3 }}
+    {{ $.Scratch.Set "alt" (.Get 2) }} <!-- Get the alt text -->
+  {{ else }} 
+    {{ $.Scratch.Set "alt" "" }} 
+  {{ end }} 
+
+  <!-- Set the variables proper like -->
+  {{ $img := $.Scratch.Get "img" }}
+
+  {{ $pos := $.Scratch.Get "pos" }} 
+  {{ if and (ne $pos "right") (ne $pos "left") }}
+    {{ $.Scratch.Set "pos" "right" }}
+  {{ end }} <!-- Floats are only right or left! -->
+  {{ $pos := $.Scratch.Get "pos" }} 
+  
+  {{ $alt := $.Scratch.Get "alt" }}
+
+  <img src="{{ $img }}" style="float:{{ $pos }}" alt="{{ $alt }}" title="{{ $alt }}" class="img-responsive thumbnail" />
+
+
+{{ end }}

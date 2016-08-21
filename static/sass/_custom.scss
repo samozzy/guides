@@ -22,11 +22,25 @@ blockquote {
 	footer {
 	padding: 10px 0 0 0;
 	}
+	p {
+		margin: 0;
+	}
 }
 
 a.btn {
 	text-decoration: none;
 	font-weight: bold;
+}
+a[href^="mailto"] {
+	text-decoration: none;
+}
+a[data-toggle="collapse"]:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.panel p {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 // Nav bar
 .head-logo { // Logo in the top left
@@ -67,7 +81,7 @@ div.top-toc {
 	line-height: 2;
 	&.affix { // For when it floats
 		display: block;
-		z-index: 999;
+		z-index: 9;
 		top: 0;
 		margin: 0;
 		width: 100%;
@@ -79,19 +93,12 @@ div.top-toc { // For when it's fixed
 }
 // So the submenu jumps go above the headers
 nav.top-toc > ul > li { 
-	z-index: 999;
 	> a {
 		color: $gray-darker;
+		white-space: nowrap;
 	}
 }
 
-.content h1:before {
-  display: block;
-  content: " ";
-  margin-top: -(61px + $fs_section-heading); /* negative fixed header height */
-  height: 61px + $fs_section-heading; /* fixed header height*/
-  visibility: hidden;
-}
 // Pretty submenu things
 nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
 .to-top > ul, {

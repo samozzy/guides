@@ -1,0 +1,38 @@
+{{ $numOfParams := len .Params }}
+{{ if ge $numOfParams 1 }} <!-- Ensure there is a selected team section -->
+
+	{{ $team := .Get 0 }} <!-- Get the team -->
+
+	{{ if isset $.Site.Data.team $team }} <!-- Verify it exists -->
+		<!-- Figure out how many people, and then divide up into columns -->
+		{{ if le (len (index $.Site.Data.team $team)) 3 }}
+			{{ $.Scratch.Set "length" (div 12 (len (index $.Site.Data.team $team))) }}
+		{{ else }}
+			{{ $.Scratch.Set "length" 4 }} <!-- No megasquish, maximum of 4 units wide -->
+		{{ end }}
+		{{ $length := ($.Scratch.Get "length") }} <!-- Get the variable to use below -->
+		<div class="row">
+			{{ range $key, $item := index $.Site.Data.team $team }}
+				{{ if eq $key 3}} <!-- No ugly wrapping -->
+					<div class="clearfix visible-md-block visible-lg-block"></div> <!-- Bigger screens - wraps every 3 -->
+				{{ else if eq $key 2 }}
+					<div class="clearfix visible-sm-block"></div> <!-- Smaller screens - wraps every 2 -->
+				{{ end }}
+
+				<div class="col-md-{{ $length }} col-sm-6 text-center" >
+					{{ if $item.img }}
+						<img class="img-circle" src="{{ $item.img }}" alt="{{ $item.Name }}" title="{{ $item.Name }}"/>
+					{{ end }}
+					<p><strong>{{ $item.Name }}</strong>
+					<br />{{ $item.Role }}
+					{{ if $item.Email }}
+						<br /><a href="mailto:{{$item.Email}}" title="{{ $item.Email}}" alt="{{$item.Email}}">
+							<small><span class="fa fa-envelope"></span><small> {{ $item.Email }}</small></small></a>
+					{{ end }}
+					</p>
+				</div>
+			{{ end }}
+		</div>
+	{{ end }}
+
+{{ end }}
