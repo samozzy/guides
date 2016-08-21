@@ -22,6 +22,9 @@ blockquote {
 	footer {
 	padding: 10px 0 0 0;
 	}
+	p {
+		margin: 0;
+	}
 }
 
 a.btn {
@@ -70,7 +73,7 @@ div.top-toc {
 	line-height: 2;
 	&.affix { // For when it floats
 		display: block;
-		z-index: 999;
+		z-index: 9;
 		top: 0;
 		margin: 0;
 		width: 100%;
@@ -82,7 +85,6 @@ div.top-toc { // For when it's fixed
 }
 // So the submenu jumps go above the headers
 nav.top-toc > ul > li { 
-	z-index: 999;
 	> a {
 		color: $gray-darker;
 	}
