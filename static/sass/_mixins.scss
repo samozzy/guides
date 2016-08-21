@@ -17,14 +17,18 @@
 	background: $background;
 	background: rgba($background,$amount);
 }
-
+@font-face {
+    font-family: 'TrebuchetGG';
+    src: url('../fonts/Trebuchet.ttf');
+}
 @mixin serif-font{
 	font-family: 'Lora', 'Times New Roman', serif;
 }
 
 @mixin sans-serif-font() {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
 }
 @mixin black-font-border {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+

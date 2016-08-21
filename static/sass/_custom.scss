@@ -14,14 +14,74 @@
 body {
 	position: relative; //For scrollspy to work
 }
+blockquote {
+	border-color: $ggRasp;
+	small {
+		color: $ggRasp; 
+	}
+	footer {
+	padding: 10px 0 0 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+a.btn {
+	text-decoration: none;
+	font-weight: bold;
+}
+a[href^="mailto"] {
+	text-decoration: none;
+}
+a[data-toggle="collapse"]:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.panel p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+// Nav bar
+.head-logo { // Logo in the top left
+	@include transition-all(all);
+	background: url('../img/branding/ggse-head.png') no-repeat;
+	background-size: 100%;
+	margin-top: 30px;
+	height: 170px;
+	width: 250px;
+	@media only screen and (max-width: 992px) { //For the toggle menu and to prevent overlap
+		height: 60px;
+		width: 92px;
+		margin: 0 0 0 30px;
+	}
+}
+.navbar.shrink .head-logo { // Make the logo smaller when we scroll, so it fits in the incoming menu
+	height: 60px;
+	width: 92px;
+	margin-top: 0;
+}
+.navbar-custom {
+	@media (max-width: 768px) { // Keep the toggle menu always visible
+		position: fixed !important;
+	}
+	@media only screen and (min-width: 768px) { // Make .Site.Title only visible in the floating menu
+		.visible-shrink { // Only visible when 'shrink' is active. 
+			display: none !Important;
+			&.shrink {
+				display: block !important;
+			}
+		}
+	}
+}
 
 // Floating submenu (using Table of Contents)
 div.top-toc { 
-	background: $pink;
+	background: $ggBlue;
 	line-height: 2;
 	&.affix { // For when it floats
 		display: block;
-		z-index: 999;
+		z-index: 9;
 		top: 0;
 		margin: 0;
 		width: 100%;
@@ -33,16 +93,12 @@ div.top-toc { // For when it's fixed
 }
 // So the submenu jumps go above the headers
 nav.top-toc > ul > li { 
-	z-index: 999;
+	> a {
+		color: $gray-darker;
+		white-space: nowrap;
+	}
 }
 
-.content h1:before {
-  display: block;
-  content: " ";
-  margin-top: -(61px + $fs_section-heading); /* negative fixed header height */
-  height: 61px + $fs_section-heading; /* fixed header height*/
-  visibility: hidden;
-}
 // Pretty submenu things
 nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
 .to-top > ul, {
@@ -52,11 +108,11 @@ nav.top-toc > ul, //Make the submenu look like a navbar, without using the world
 .to-top > ul > li { //Make the "top" icon do what the text does without looking terrible
 	> a:hover,
 	> a:focus {
-		color: $rose;
+		color: $lightBlue;
 		background: none;
 	}
 	> a:focus {
-		color: $gray-dark; 
+		color: $gray-lighter; // Overwrite the above
 	}
 }
 nav.top-toc > ul {
@@ -65,8 +121,8 @@ nav.top-toc > ul {
 	> li:focus, > li > a:focus,
 	> li.active:hover, > li.active > a:hover,
 	> li.active:focus, > li.active > a:focus, { // I'm sure there's a way to not use so many selectors...
-		background-color: $rose;
-		color: $gray-dark;
+		background-color: $lightBlue;
+		color: $gray-lighter;
 	}
 }
 
@@ -92,9 +148,15 @@ nav.top-toc > ul > li > ul {
 }
 // Striping on home page
 
-.home-banner:nth-of-type(even){
-	background: pink;
-	color: $gray-light;
+.home-banner:nth-of-type(even) {
+	background: $ggBlue;
+	color: $white;
+	blockquote * {
+		color: $white;
+		small {
+			color: $ggRasp;
+		}
+	}
 }
 
 // Nav bar adjustments
@@ -113,6 +175,97 @@ nav.top-toc > ul > li > ul {
 	@include black-font-border;
 }
 
-.center {
-	text-align: center;
+// Footer and copyright text
+footer {
+	// background: $gray-dark;
+	// @include gradient-vertical($white,$gray-dark,0%,15%);
+	li, span, a {
+		@extend .copyright;
+		@extend .text-muted;
+		line-height: 1.5;
+		text-align: left !important; // Override bootstrap
+		color: $ggRasp;
+	}
+	a:hover, a:focus {
+		color: $lightRasp;
+		text-decoration: none;
+	}
+}
+// Social icon adjustment
+li.footer_icons {
+	.fa-circle {
+		color: $ggRasp;
+	}
+	:hover {
+		.fa-circle {
+			color: $lightRasp;
+		}
+	}
+}
+
+// clean-blog overrides
+a {
+	img {
+		&:hover, &:focus {
+			cursor: auto !important;
+		}
+	}
+}
+%pullquote-mobile {
+	@media only screen and (max-width: $sm-bs) { //Override everything on smaller screens
+		float: left;
+    margin: -20px 10px 10px 10px !important;
+    width: 100%;
+    max-width: 100% !important; //override sides
+    text-align: center !important;
+    border: none !important; //such as to override sides
+	}
+}
+
+//Fancy pullquote things
+.pullquote {
+	&:before {
+		position: relative;
+		content: attr(data-pullquote);
+		padding: 5px;
+		font-size: $font-size-h3;
+		color: $ggRasp;
+		max-width: 50%;
+	}
+	@each $side in left, right, center {
+		&.pullquote-#{$side}:before{
+			margin: 10px 30px 0 30px;
+			@if $side == center {
+				float: left;
+				margin: -20px 10px 10px 10px;
+				width: 100%;
+				max-width: 100% !important;
+				padding: 5px;
+				text-align: center;
+			}
+			@else {
+				float: $side ;
+				margin-#{$side}: 0;
+				border-#{$side}: 5px solid $lightestRasp;
+				padding-#{$side}: 10px;
+				text-align: $side;
+				@extend %pullquote-mobile;
+			}
+		}
+	}
+}
+@each $side in left, right, center {
+	hr.pullquote-#{$side} {
+		border-color: $lightestRasp;
+		@if $side == center {
+			width: 20%;
+		}
+		@else {
+			display: none;
+			@media only screen and (max-width: $sm-bs) {
+				width: 20%;
+				display: block;
+			}
+		}
+	}
 }

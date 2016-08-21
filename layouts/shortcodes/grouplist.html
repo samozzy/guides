@@ -1,0 +1,21 @@
+{{ $numOfParams := len .Params }}
+{{ if ge $numOfParams 1 }} <!-- Ensure there is a selected group -->
+
+	{{ $section := .Get 0 }} <!-- Get the group -->
+	{{ if isset $.Site.Data.groups $section }} <!-- Verify it exists -->
+		{{ $nogroups := len (index $.Site.Data.groups $section )}}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a data-toggle="collapse" data-target="#collapse{{$section}}" class="collapsea">Our {{ title $section }} groups <span class="glyphicon glyphicon-menu-right"></span> </a>
+			</div>
+			<div class="collapse" id="collapse{{$section}}">
+				<div class="panel-body">
+					<p>{{ range $key, $item := index $.Site.Data.groups $section }}
+						Group: {{ $item.Name }}. Meets on: {{ $item.Day }}s.
+						{{ if ne (add $key 1) ($nogroups) }}<br />{{ end }}
+					{{ end }}</p>
+				</div>
+			</div>
+		</div>
+	{{ end }}
+{{ end }}

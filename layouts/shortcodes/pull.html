@@ -1,0 +1,30 @@
+{{ $numOfParams := len .Params }}
+{{ if and (ge $numOfParams 1) (le $numOfParams 2) }}
+  <!-- Check if the Parameter is positional or named which can handle both -->
+  {{ if .IsNamedParams }}
+    {{ $.Scratch.Set "text" (.Get "text") }} 
+    {{ $.Scratch.Set "pos" (.Get "pos") }} <!-- If params are named, set them appropriately -->
+  {{ else }}
+    {{ $.Scratch.Set "text" (.Get 0) }} <!-- If they aren not, autoset --> 
+    {{ if ge $numOfParams 2 }}
+      {{ $.Scratch.Set "pos" (.Get 1) }}
+    {{ else }}
+      {{ $.Scratch.Set "pos" "right" }} <!-- Default value -->
+    {{ end }}
+  {{ end }}
+  <!-- Set the variables proper like -->
+  {{ $text := $.Scratch.Get "text" }}
+  {{ $pos := $.Scratch.Get "pos" }} <!-- Cannot fail, as it always has a value -->
+  
+  {{ if and (ne $pos "right") (ne $pos "left") (ne $pos "center") }}
+  	{{ $.Scratch.Set "pos" "right" }}
+  {{ end }} <!-- Right, left or center only -->
+
+  {{ $pos := $.Scratch.Get "pos" }} <!-- There should be some way of doing this from within the above if scope, but it is escaping me for now -->
+  <!-- HTML -->
+ 	<p class="pullquote pullquote-{{ $pos }}" data-pullquote="{{ $text }}">
+ 	<hr class="pullquote-{{ $pos }}">
+  	{{ .Inner | markdownify }} 
+	</p>
+  
+{{ end }}
