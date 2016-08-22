@@ -3,27 +3,18 @@ author = []
 categories = ["Uncategorized"]
 date = "2016-07-17T15:46:07+01:00"
 description = ""
-draft = true
+draft = false
 image = "/img/about-bg.jpg"
 tags = []
 title = "Contact Us"
 
 +++
 
-# Contact Guides
+Whether you or your daughter want to join us, or you'd just like to know more about our division, just drop us a line below and we'll get back to you as soon as possible.
 
-Contact someone
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Alternatively, you can contact one of [the team]({{ relref . "team.md" }}), or message us on Facebook.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+If you have any suggestions for this website, put `Website:` as the subject.
 
+## Contact form
+A contact form will end up here someday.

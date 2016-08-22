@@ -1,41 +1,39 @@
 +++
-author = []
-categories = ["Uncategorized"]
 date = "2016-08-04T01:16:28+01:00"
 description = ""
-draft = true
+draft = false
 image = "/img/about-bg.jpg"
-tags = []
 title = "About Beeston Guides"
+toc = true
 
 +++
 
-# About Guides
-This is the about page
+# About Girlguiding
 
-{{< pull "here are some really nice words" left >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+Girlguiding was founded in 1910 by Robert and Agnes Baden-Powell, and has been running successfully ever since. By the end of 2013, Girlguiding UK had over 553,000 members throughout its many divisions and groups. Estimates suggest that around 1 in 4 of 8-year-old girls in the UK are involved in guiding.
 
-{{< pull "here are some words on the right, they are very nice words, words they are nice" right >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+Our younger groups, Brownies (previously known as Rosebuds) and Rainbows were formed in 1914 and 1987 respectively. The Trefoil Guild was formed for any members over 18 who wished to remain a part of Girlguiding but couldn't remain active within a unit in 1943.
 
-{{< pull "There is something interesting in the centre" center >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+# Promise
+Upon joining, all members of Girlguiding make a promise:
+
+> I promise that I will do my best;  
+> To be true to myself and develop my beliefs,  
+> To serve the Queen and my community,  
+> To help other people and  
+> To keep the (Brownie) Guide Law.  
+
+For Rainbows, the promise is a little different:
+
+> I promise that I will do my best   
+> to think about my beliefs   
+> and to be kind and helpful
+
+# Beyond the UK
+Girlguiding isn't just unique to the UK. There are Girlguiding Associations in nine international locations: Anguilla, Bermuda, British Virgin Islands, Cayman Islands, Falkland Islands, Gibraltar, Montserrat, Saint Helena and the Turks & Caicos Islands.
+
+More information about our international friends can be found at [The Branch Association Members website](http://girlguiding-bam.org)
+
+# More information
+
+To find out more about Girlguiding in both Nottinghamshire and the UK, please visit the [Girlguiding Nottinghamshire](http://girlguidingnottinghamshire.org.uk) and [Girlguiding UK](http://girlguiding.org.uk) websites.
