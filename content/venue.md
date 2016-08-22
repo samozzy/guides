@@ -7,8 +7,11 @@ draft = true
 image = "/img/about-bg.jpg"
 tags = []
 title = "Beeston HQ"
+toc = true
 
 +++
+
+# Location
 
 {{< row >}}
 {{< col 2 >}}
@@ -29,6 +32,7 @@ NG9 1GL
 # Facilities
 Beeston HQ can also serve as a venue for your afternoon, evening or day event up to 100 people. 
 Or, for something a bit different such as training courses, meetings, slideshows, sleepovers (up to 20 people) or a weekend stay.
+
  * Fully accessible
  * Competitively priced
  * Located within the secure site of Beeston Youth and Community Centre
