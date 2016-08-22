@@ -31,9 +31,26 @@ copyright = "&copy; 2016 Girlguiding"
   url = "/"
   weight = 1
 [[menu.main]]
-  name = "News Posts"
+  name = "News"
   url = "/news/"
   weight = 2
+[[menu.main]]
+  name = "Groups"
+  url = "/groups/"
+  weight = 3
+[[menu.main]]
+  name = "Opportunities"
+  url = "/opportunities/"
+  weight = 4
+[[menu.main]]
+  name = "Team"
+  url = "/team"
+  weight = 5
+[[menu.main]]
+  name = "Venue"
+  url = "/venue/"
+  weight = 6
+
 
 [blackfriday]
   plainIDAnchors = true #Now true by default in Hugo 0.16. Will be removed when Travis uses this version (TBC)
