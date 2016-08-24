@@ -17,4 +17,5 @@ Alternatively, you can contact one of [the team]({{ relref . "team.md" }}), or m
 If you have any suggestions for this website, put `Website:` as the subject.
 
 ## Contact form
-A contact form will end up here someday.
+
+{{< contactform >}} 
