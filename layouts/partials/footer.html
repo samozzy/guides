@@ -57,6 +57,11 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ .Site.BaseURL }}/js/clean-blog.js"></script>
 
+    <!-- Contact form JS -->
+    <script src="{{ .Site.BaseURL }}/js/contact.js"></script>
+    <!-- Contact form validation JS -->
+    <script src="{{ .Site.BaseURL }}/js/validation.js"></script>
+
     <script> // Scrollspy on top-toc (highlight active section)
     $(document).ready(function() { 
         $("#TableOfContents > ul").addClass("nav");
@@ -152,7 +157,7 @@
             });
         });
         $(document).ready(function () { // When we expand a panel, change the glyphicon like magic
-            $('.collapsea').click(function () {
+            $(".collapsea > div").click(function () {
                 $(this).children(":first").toggleClass("glyphicon-menu-down").toggleClass("glyphicon-menu-right");
             });
         });

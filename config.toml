@@ -43,17 +43,13 @@ copyright = "&copy; 2016 Girlguiding"
   url = "/opportunities/"
   weight = 4
 [[menu.main]]
-  name = "Trefoil"
-  url = "/trefoil/"
-  weight = 5
-[[menu.main]]
   name = "Team"
   url = "/team"
-  weight = 6
+  weight = 5
 [[menu.main]]
   name = "Venue"
   url = "/venue/"
-  weight = 7
+  weight = 6
 
 
 [blackfriday]
