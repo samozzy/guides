@@ -11,9 +11,9 @@ toc = true
 +++
 
 # Rainbows
-
-### Rainbows have fun!
+{{< pull "Rainbows have fun!" left >}}{{< /pull >}}
 They play games, have parties, make things and enjoy the outdoors while developing life skills.
+
 {{< img "http://placekitten.com/300/200" right >}}
 
 They follow a programme called the **Rainbow Jigsaw**, which involves a wide range of activities and games. Being a Rainbow is all about learning, developing self-confidence, building friendships and, of course, having lots of fun!
@@ -32,8 +32,8 @@ What do girls say about Rainbows?
 {{< grouplist rainbows >}}
 
 # Brownies
-
-### Brownies do it all! 
+{{< pull "Brownies do it all!" left >}}
+{{< /pull >}}
 
 Their meetings are full of challenges, games and activities, usually ones that the Brownies have suggested themselves
 Brownies are girls aged 7 to 10.
@@ -53,8 +53,8 @@ The Brownie Adventure is divided into three areas: *You, Community, World*.
 {{< grouplist brownies >}}
 
 # Guides
-
-### Guides Go For It!
+{{< pull "Guides go for it!" left >}}
+{{< /pull >}}
 
 Being a Guide encourages girls to develop by undertaking challenges and pushing the boundaries of their experience.
 Guides are girls aged 10 to 14.
@@ -116,11 +116,9 @@ There are many volunteer roles in guiding. Many volunteers give their time as Le
 
 
 ## Volunteers
-
-### Volunteers make Guiding happen!
-### Do something extraordinary!
-
+{{< pull "Volunteers make Guiding happen! Do something extraordinary!" center >}}{{< /pull >}}
 Could you help girls and young women to develop their potential? Girlguiding values all its leaders and helpers - and the girls do too! This is hardly surprising when you consider what our volunteers get up to. 
+
 
 We have a whole range of roles available to suit you no matter how much time or what skills you can offer. Flexible volunteering makes it easy for people to share skills, time and energy in a way that suits their lifestyle. 
 
