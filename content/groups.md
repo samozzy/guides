@@ -115,7 +115,7 @@ There are many volunteer roles in guiding. Many volunteers give their time as Le
 > "As Leaders we learn marketing, leadership and communication skills and about fundraising, programme planning and teamwork. These are transferable skills which are extremely valuable in the workplace." <small>Nina</small>
 
 
-# Volunteers
+## Volunteers
 
 ### Volunteers make Guiding happen!
 ### Do something extraordinary!
@@ -153,3 +153,26 @@ Training and support is given to new volunteers as they work within their Unit. 
 As a volunteer you’ll also gain from the experience by making new friends and learning new skills such as leadership and organisational abilities that you can use at work or put on a CV. 
 
 Volunteers make Guiding happen! Be part of it.
+
+## Trefoil Guild 
+{{< pull  "Sharing your skills, experience, wisdom, nurturing the young – keeping the fun and adventure of Guiding alive." center>}}
+The Trefoil Guild offers a warm welcome to everyone, male or female, aged 18 or over, whether or not they have previously been connected with the Guide Movement.  
+Full membership is open to anyone willing to make or renew the Guide/Scout promise and affiliated membership to those who don’t wish to do so provided they subscribe to the aims and principles of Girlguiding. There is also associate membership for any adult still active in the Guide/Scout Association.
+{{< /pull >}}
+
+{{< row >}}
+{{< col 2 >}}
+### Aims:
+ * To live in the spirit of Guiding
+ * To offer practical help to Girlguiding
+ * To support Guiding worldwide
+ * To carry the spirit of Guiding & Scouting into the communities where we live
+{{< /col >}}
+{{< col 2 >}}
+Many Guild activities result in positive benefit to the community, but as any Guild member will tell you, a large part of the programme is devoted to having plain old-fashioned fun!
+
+As a Division we are very fortunate to have an active Trefoil Guild to support us.
+{{< /col >}}
+{{< /row >}}
+
+The group meets monthly on the 4th Wednesday of each month (except December when it is 2nd Wednesday) and there are currently 31 members in the group.  As well as having speakers at their monthly meetings the group regularly raises money for charities, visits places of interest, meets up with other Trefoil Guilds and helps out with Division and County events.    
