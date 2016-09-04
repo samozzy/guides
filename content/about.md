@@ -1,60 +1,39 @@
 +++
-author = []
-categories = ["Uncategorized"]
 date = "2016-08-04T01:16:28+01:00"
 description = ""
 draft = false
 image = "/img/about-bg.jpg"
-tags = []
 title = "About Beeston Guides"
+toc = true
 
 +++
 
-<!-- AN EXPLANATION OF THE ABOVE 
-Everything between the +++'s is the metadata for this page/post.
+# About Girlguiding
 
-- author = [] #Add your name. Default (when the square brackets are empty) is "Beeston HQ"
-- categories = ["Uncategorized"] #One way of sorting posts is to categorise them.
-- date = YYYYMMDDTHH:MM:SS+GMT #Hugo adds in a date when you make a new page. Change or not. Your call.
-- description = "" #Self-explanatory
-- draft = true #Set to false to publish the post/page. No quotes around true/false.
-- image = "/img/about-bg.jpg" #Add a header image. Maybe. Your call. Put the path to the image here. Usually a kitty by default.
-- tags = [] #Another way is to tag them. Do not remove the tag line or things go very badly.
-- title = "" #If left blank, the title will be the filename. Recommend filling this in.
+Girlguiding was founded in 1910 by Robert and Agnes Baden-Powell, and has been running successfully ever since. By the end of 2013, Girlguiding UK had over 553,000 members throughout its many divisions and groups. Estimates suggest that around 1 in 4 of 8-year-old girls in the UK are involved in guiding.
 
-If you would like to add the page to the header menu, use the following:
-[menu.main]
-name = "" #Text in the menu
-weight = 5 #Menu order. Integers only.
+Our younger groups, Brownies (previously known as Rosebuds) and Rainbows were formed in 1914 and 1987 respectively. The Trefoil Guild was formed for any members over 18 who wished to remain a part of Girlguiding but couldn't remain active within a unit in 1943.
 
-THE EXPLANATION IS FINISHED. Please write your content below. --> 
+# Promise
+Upon joining, all members of Girlguiding make a promise:
 
-# About Guides
-This is the about page
+> I promise that I will do my best;  
+> To be true to myself and develop my beliefs,  
+> To serve the Queen and my community,  
+> To help other people and  
+> To keep the (Brownie) Guide Law.  
 
-{{< pull "here are some really nice words" left >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+For Rainbows, the promise is a little different:
 
-{{< pull "here are some words on the right, they are very nice words, words they are nice" right >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+> I promise that I will do my best   
+> to think about my beliefs   
+> and to be kind and helpful
 
-{{< pull "There is something interesting in the centre" center >}}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{{< /pull >}}
+# Beyond the UK
+Girlguiding isn't just unique to the UK. There are Girlguiding Associations in nine international locations: Anguilla, Bermuda, British Virgin Islands, Cayman Islands, Falkland Islands, Gibraltar, Montserrat, Saint Helena and the Turks & Caicos Islands.
+
+More information about our international friends can be found at [The Branch Association Members website](http://girlguiding-bam.org)
+
+# More information
+
+To find out more about Girlguiding in both Nottinghamshire and the UK, please visit the [Girlguiding Nottinghamshire](http://girlguidingnottinghamshire.org.uk) and [Girlguiding UK](http://girlguiding.org.uk) websites.

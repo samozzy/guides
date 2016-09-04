@@ -6,7 +6,7 @@
 		{{ $nogroups := len (index $.Site.Data.groups $section )}}
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<a data-toggle="collapse" data-target="#collapse{{$section}}" class="collapsea">Our {{ title $section }} groups <span class="glyphicon glyphicon-menu-right"></span> </a>
+				<a data-toggle="collapse" data-target="#collapse{{$section}}" class="collapsea"><div style="width:100%">Our {{ title $section }} groups <span class="glyphicon glyphicon-menu-right"></span></div></a>
 			</div>
 			<div class="collapse" id="collapse{{$section}}">
 				<div class="panel-body">
