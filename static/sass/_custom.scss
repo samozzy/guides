@@ -85,6 +85,9 @@ div.top-toc {
 		top: 0;
 		margin: 0;
 		width: 100%;
+		@media only screen and (max-width: $sm-bs){
+			top: 60px;
+		}
 	}
 }
 div.top-toc { // For when it's fixed
@@ -92,10 +95,28 @@ div.top-toc { // For when it's fixed
 	margin-bottom: 20px;
 }
 // So the submenu jumps go above the headers
-nav.top-toc > ul > li { 
-	> a {
-		color: $gray-darker;
-		white-space: nowrap;
+@media only screen and (max-width: $sm-bs){ // Make top-toc look nice on mobiles
+	nav.top-toc > ul {
+		margin-left: -20px;
+	}
+	nav.top-toc > ul,
+	.to-top > ul {
+		> li {
+			font-size: 12px;
+			width: 1%;
+			> a {
+				padding: 5px;
+			}
+		}
+	}
+}
+nav.top-toc > ul {
+	> li { 
+		display: table-cell;
+		> a {
+			color: $gray-darker;
+			white-space: nowrap;
+		}
 	}
 }
 

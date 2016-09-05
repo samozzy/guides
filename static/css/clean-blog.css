@@ -8940,37 +8940,65 @@ div.top-toc.affix {
   margin: 0;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  /* line 82, ../sass/_custom.scss */
+  div.top-toc.affix {
+    top: 60px;
+  }
+}
 
-/* line 90, ../sass/_custom.scss */
+/* line 93, ../sass/_custom.scss */
 div.top-toc {
   margin-top: -50px;
   margin-bottom: 20px;
 }
 
-/* line 96, ../sass/_custom.scss */
+@media only screen and (max-width: 768px) {
+  /* line 99, ../sass/_custom.scss */
+  nav.top-toc > ul {
+    margin-left: -20px;
+  }
+
+  /* line 104, ../sass/_custom.scss */
+  nav.top-toc > ul > li,
+  .to-top > ul > li {
+    font-size: 12px;
+    width: 1%;
+  }
+  /* line 107, ../sass/_custom.scss */
+  nav.top-toc > ul > li > a,
+  .to-top > ul > li > a {
+    padding: 5px;
+  }
+}
+/* line 114, ../sass/_custom.scss */
+nav.top-toc > ul > li {
+  display: table-cell;
+}
+/* line 116, ../sass/_custom.scss */
 nav.top-toc > ul > li > a {
   color: #222222;
   white-space: nowrap;
 }
 
-/* line 103, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 nav.top-toc > ul,
 .to-top > ul {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
 }
 
-/* line 109, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
 .to-top > ul > li > a:hover,
 .to-top > ul > li > a:focus {
   color: #4c9cd0;
   background: none;
 }
-/* line 114, ../sass/_custom.scss */
+/* line 135, ../sass/_custom.scss */
 .to-top > ul > li > a:focus {
   color: #eeeeee;
 }
 
-/* line 119, ../sass/_custom.scss */
+/* line 140, ../sass/_custom.scss */
 nav.top-toc > ul > li.active > a,
 nav.top-toc > ul > li:hover, nav.top-toc > ul > li > a:hover,
 nav.top-toc > ul > li:focus, nav.top-toc > ul > li > a:focus,
@@ -8980,91 +9008,91 @@ nav.top-toc > ul > li.active:focus, nav.top-toc > ul > li.active > a:focus {
   color: #eeeeee;
 }
 
-/* line 129, ../sass/_custom.scss */
+/* line 150, ../sass/_custom.scss */
 nav.top-toc > ul > li > ul {
   display: none;
 }
 
-/* line 135, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 .side-toc {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
-/* line 138, ../sass/_custom.scss */
+/* line 159, ../sass/_custom.scss */
 .side-toc ul, .side-toc ul ul {
   list-style-type: none;
   line-height: 4;
 }
-/* line 141, ../sass/_custom.scss */
+/* line 162, ../sass/_custom.scss */
 .side-toc ul a, .side-toc ul ul a {
   color: #777777;
 }
-/* line 145, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 .side-toc.affix {
   top: 40px !important;
 }
 
-/* line 151, ../sass/_custom.scss */
+/* line 172, ../sass/_custom.scss */
 .home-banner:nth-of-type(even) {
   background: #4E88C7;
   color: #FFF;
 }
-/* line 154, ../sass/_custom.scss */
+/* line 175, ../sass/_custom.scss */
 .home-banner:nth-of-type(even) blockquote * {
   color: #FFF;
 }
-/* line 156, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 .home-banner:nth-of-type(even) blockquote * small {
   color: #C40063;
 }
 
-/* line 163, ../sass/_custom.scss */
+/* line 184, ../sass/_custom.scss */
 .navbar-brand {
   font-size: 20px;
   margin-left: 30px !important;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 188, ../sass/_custom.scss */
 .nav, nav.top-toc > ul,
 .to-top > ul {
   margin-right: 30px;
 }
 
-/* line 172, ../sass/_custom.scss */
+/* line 193, ../sass/_custom.scss */
 .site-heading,
 .page-heading,
 .post-heading {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/* line 182, ../sass/_custom.scss */
+/* line 203, ../sass/_custom.scss */
 footer li, footer span, footer a {
   line-height: 1.5;
   text-align: left !important;
   color: #C40063;
 }
-/* line 189, ../sass/_custom.scss */
+/* line 210, ../sass/_custom.scss */
 footer a:hover, footer a:focus {
   color: #d64c91;
   text-decoration: none;
 }
 
-/* line 196, ../sass/_custom.scss */
+/* line 217, ../sass/_custom.scss */
 li.footer_icons .fa-circle {
   color: #C40063;
 }
-/* line 200, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 li.footer_icons :hover .fa-circle {
   color: #d64c91;
 }
 
-/* line 209, ../sass/_custom.scss */
+/* line 230, ../sass/_custom.scss */
 a img:hover, a img:focus {
   cursor: auto !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 214, ../sass/_custom.scss */
+  /* line 235, ../sass/_custom.scss */
   .pullquote.pullquote-left:before, .pullquote.pullquote-right:before {
     float: left;
     margin: -20px 10px 10px 10px !important;
@@ -9075,7 +9103,7 @@ a img:hover, a img:focus {
   }
 }
 
-/* line 227, ../sass/_custom.scss */
+/* line 248, ../sass/_custom.scss */
 .pullquote:before {
   position: relative;
   content: attr(data-pullquote);
@@ -9084,7 +9112,7 @@ a img:hover, a img:focus {
   color: #C40063;
   max-width: 50%;
 }
-/* line 236, ../sass/_custom.scss */
+/* line 257, ../sass/_custom.scss */
 .pullquote.pullquote-left:before {
   margin: 10px 30px 0 30px;
   float: left;
@@ -9093,7 +9121,7 @@ a img:hover, a img:focus {
   padding-left: 10px;
   text-align: left;
 }
-/* line 236, ../sass/_custom.scss */
+/* line 257, ../sass/_custom.scss */
 .pullquote.pullquote-right:before {
   margin: 10px 30px 0 30px;
   float: right;
@@ -9102,7 +9130,7 @@ a img:hover, a img:focus {
   padding-right: 10px;
   text-align: right;
 }
-/* line 236, ../sass/_custom.scss */
+/* line 257, ../sass/_custom.scss */
 .pullquote.pullquote-center:before {
   margin: 10px 30px 0 30px;
   float: left;
@@ -9113,33 +9141,33 @@ a img:hover, a img:focus {
   text-align: center;
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 279, ../sass/_custom.scss */
 hr.pullquote-left {
   border-color: #f3cce0;
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 258, ../sass/_custom.scss */
+  /* line 279, ../sass/_custom.scss */
   hr.pullquote-left {
     width: 20%;
     display: block;
   }
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 279, ../sass/_custom.scss */
 hr.pullquote-right {
   border-color: #f3cce0;
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 258, ../sass/_custom.scss */
+  /* line 279, ../sass/_custom.scss */
   hr.pullquote-right {
     width: 20%;
     display: block;
   }
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 279, ../sass/_custom.scss */
 hr.pullquote-center {
   border-color: #f3cce0;
   width: 20%;
