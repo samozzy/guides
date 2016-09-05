@@ -79,6 +79,8 @@ a[data-toggle="collapse"]:hover {
 div.top-toc { 
 	background: $ggBlue;
 	line-height: 2;
+	margin-top: -50px;
+	margin-bottom: 20px;
 	&.affix { // For when it floats
 		display: block;
 		z-index: 2;
@@ -89,10 +91,11 @@ div.top-toc {
 			top: 60px;
 		}
 	}
+	@media only screen and (max-width: 350px){
+		display: none;
+	}
 }
 div.top-toc { // For when it's fixed
-	margin-top: -50px;
-	margin-bottom: 20px;
 }
 // So the submenu jumps go above the headers
 @media only screen and (max-width: $sm-bs){ // Make top-toc look nice on mobiles
