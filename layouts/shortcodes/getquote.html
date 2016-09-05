@@ -1,0 +1,14 @@
+{{ $numOfParams := len .Params }}
+{{ if ge $numOfParams 1 }} <!-- Ensure there is a selected quote -->
+
+	{{ $quote := .Get 0 }} <!-- Get the desired quote -->
+	{{ range $key, $item := index $.Site.Data.quotes "quotes" }}
+		{{ if in $item.Source $quote }}
+			<div class="row text-left"> 
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<blockquote><h3>{{$item.Quote}} <small>{{$item.Source}}</small></h3></blockquote>
+				</div>
+			</div>
+		{{ end }}
+	{{ end }}
+{{ end }}
