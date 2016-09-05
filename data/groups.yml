@@ -1,24 +1,8 @@
   # Displayed in the following order unless otherwise specified
 rainbows:
   - 
-    Name: "2nd Toton Rainbows"
-    Day: "Monday"
-    Waiting: "Yes"
-  -
-    Name: "4th Attenborough Rainbows"
-    Day: "Monday"
-    Waiting: "Yes"
-  -  
     Name: "5th Beeston Rainbows"
     Day: "Monday"
-    Waiting: "Yes"
-  -
-    Name: "1st Toton Rainbows"
-    Day: "Tuesday"
-    Waiting: "Yes"
-  -
-    Name: "3rd Attenborough Rainbows"
-    Day: "Tuesday"
     Waiting: "Yes"
   -
     Name: "2nd Beeston Rainbows"
@@ -34,36 +18,12 @@ rainbows:
     Waiting: "Yes"
 brownies:
   -
-    Name: "3rd Toton Brownies"
-    Day: "Monday"
-    Waiting: "Yes"
-  -
-    Name: "3rd Attenborough Brownies"
-    Day: "Monday"
-    Waiting: "Yes"
-  -
     Name: "5th Beeston Brownies"
     Day: "Monday"
     Waiting: "Yes"
   - 
-    Name: "2nd Toton Brownies"
-    Day: "Tuesday"
-    Waiting: "Yes"
-  - 
-    Name: "4th Attenborough Brownies"
-    Day: "Wednesday"
-    Waiting: "No"
-  -
     Name: "6th Beeston Brownies"
     Day: "Wednesday"
-    Waiting: "Yes"
-  -
-    Name: "1st Toton Brownies"
-    Day: "Thursday"
-    Waiting: "No"
-  - 
-    Name: "2nd Attenborough Brownies"
-    Day: "Thursday"
     Waiting: "Yes"
   -
     Name: "1st Beeston Brownies"
@@ -83,14 +43,6 @@ brownies:
     Waiting: "Yes"
 guides:
   -
-    Name: "2nd Toton Guides"
-    Day: "Monday"
-    Waiting: "No"
-  -
-    Name: "3rd Attenborough Guides"
-    Day: "Monday"
-    Waiting: "Yes"
-  -
     Name: "5th Beeston Guides"
     Day: "Monday"
     Waiting: "No"
@@ -98,14 +50,6 @@ guides:
     Name: "6th Beeston Guides"
     Day: "Tuesday"
     Waiting: "No"
-  -
-    Name: "1st Toton Guides"
-    Day: "Thursday"
-    Waiting: "Yes"
-  -
-    Name: "2nd Attenborough Guides"
-    Day: "Thursday"
-    Waiting: "Yes"
   -
     Name: "2nd Beeston Guides"
     Day: "Thursday"
@@ -116,9 +60,6 @@ guides:
     Waiting: "Yes"
 
 senior-section:
-  -
-    Name: "Attenborough and Toton Senior Section"
-    Day: "Monday"
   -
     Name: "Beeston and Chilwell Senior Section"
     Day: "Thursday"
