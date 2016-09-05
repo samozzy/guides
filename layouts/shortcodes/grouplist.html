@@ -10,7 +10,7 @@
 			</div>
 			<div class="panel-collapse collapse" id="collapse{{$section}}">
 				<div class="table-responsive">
-					<table class="table">
+					<table class="table table-striped table-hover">
 						<thead>
 							<tr>
 								<th>Unit</th>
@@ -23,7 +23,7 @@
 							<tr>
 								<td>{{ $item.Name }}</td>
 								<td>{{ $item.Day }}s</td>
-								<td {{if eq $item.Waiting "Yes"}} class="success" {{ else if eq $item.Waiting "No" }} class="danger" {{ end }} >{{ $item.Waiting }}</td>
+								<td {{if eq $item.Waiting "Yes"}} class="success" {{ else if eq $item.Waiting "No" }} class="danger" {{ else }} class="warning" {{ end }} >{{ if or (eq $item.Waiting "Yes") (eq $item.Waiting "No")}} {{ $item.Waiting }} {{ else }} Unknown {{ end }}</td>
 							</tr>
 						{{ end }}
 						</tbody>

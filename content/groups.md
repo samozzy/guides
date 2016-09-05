@@ -11,14 +11,12 @@ toc = true
 +++
 
 # Rainbows
-{{< pull "Rainbows have fun!" left >}}{{< /pull >}}
+{{< pull "Rainbows have fun!" center >}}{{< /pull >}}
 They play games, have parties, make things and enjoy the outdoors while developing life skills.
-
-{{< img "http://placekitten.com/300/200" right >}}
 
 They follow a programme called the **Rainbow Jigsaw**, which involves a wide range of activities and games. Being a Rainbow is all about learning, developing self-confidence, building friendships and, of course, having lots of fun!
 
-The Rainbow Jigsaw has four areas: *Look,    Learn,    Laugh,    Love*
+The Rainbow Jigsaw has four areas: *Look, Learn, Laugh, Love*
 
 What do girls say about Rainbows?
 
@@ -32,7 +30,7 @@ What do girls say about Rainbows?
 {{< grouplist rainbows >}}
 
 # Brownies
-{{< pull "Brownies do it all!" left >}}
+{{< pull "Brownies do it all!" center >}}
 {{< /pull >}}
 
 Their meetings are full of challenges, games and activities, usually ones that the Brownies have suggested themselves
@@ -53,7 +51,7 @@ The Brownie Adventure is divided into three areas: *You, Community, World*.
 {{< grouplist brownies >}}
 
 # Guides
-{{< pull "Guides go for it!" left >}}
+{{< pull "Guides go for it!" center >}}
 {{< /pull >}}
 
 Being a Guide encourages girls to develop by undertaking challenges and pushing the boundaries of their experience.
@@ -64,7 +62,12 @@ Members take part in a wide range of exciting activities at their regular meetin
 Girls do everything from adventure sports to playing fun games, and from taking part in community action projects to the performing arts.
 
 Guides work together in small groups or 'Patrols' and, with the support of an adult Leader, choose and run some of the activities themselves using Go for It! resource packs.
+{{< row >}}
+{{< col 2 >}}
 
+Girls can extend their knowledge and skills by working towards Guide interest badges covering many different hobbies and activities from Film lover to Independent living. They can also gain Challenge badges that recognise their participation in guiding over a period of time. The badges build towards the Baden-Powell Challenge Award, named in honour of the founder of guiding.
+{{< /col >}}
+{{< col 2 >}}
 The Guide programme is divided into five areas:
 
  - discovery of new experiences and challenges
@@ -72,8 +75,8 @@ The Guide programme is divided into five areas:
  - global awareness
  - skills and relationships
  - celebrating diversity.
-
-Girls can extend their knowledge and skills by working towards Guide interest badges covering many different hobbies and activities from Film lover to Independent living. They can also gain Challenge badges that recognise their participation in guiding over a period of time. The badges build towards the Baden-Powell Challenge Award, named in honour of the founder of guiding.
+{{< /col >}}
+{{< /row >}}
 
 > "Because of guiding I'm a lot more confident meeting new people. And I've got a really diverse bunch of friends because of it too." <small>Megan, 20</small>
 > "Guiding lets girls think, learn and develop without having to put up with boys trying to be the centre of attention all the time!" <small>Philippa, 16</small>
@@ -151,6 +154,8 @@ Training and support is given to new volunteers as they work within their Unit. 
 As a volunteer you’ll also gain from the experience by making new friends and learning new skills such as leadership and organisational abilities that you can use at work or put on a CV. 
 
 Volunteers make Guiding happen! Be part of it.
+
+<hr>
 
 ## Trefoil Guild 
 {{< pull  "Sharing your skills, experience, wisdom, nurturing the young – keeping the fun and adventure of Guiding alive." center>}}
