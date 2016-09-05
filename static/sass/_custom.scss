@@ -26,13 +26,17 @@ blockquote {
 		margin: 0;
 	}
 }
+.content a {
+	text-decoration: none !important; //Override bootstrap
+	border-bottom: 1px solid $lightRasp;
+}
 
 a.btn {
 	text-decoration: none;
 	font-weight: bold;
 }
 a[href^="mailto"] {
-	text-decoration: none;
+	border-bottom: none;
 }
 a[data-toggle="collapse"]:hover {
 	text-decoration: none;
