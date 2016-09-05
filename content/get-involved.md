@@ -6,7 +6,7 @@ description = "For our members aged between 14 and 25, there are a wealth of opp
 draft = true
 image = "/img/about-bg.jpg"
 tags = []
-title = "Opportunities"
+title = "Get Involved"
 toc = true
 
 +++
