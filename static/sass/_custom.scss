@@ -172,7 +172,8 @@ nav.top-toc > ul > li > ul {
 }
 // Striping on home page
 
-.home-banner:nth-of-type(even) {
+.home-banner:nth-of-type(even),
+.banner-blue {
 	background: $ggBlue;
 	color: $white;
 	blockquote * {
