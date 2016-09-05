@@ -22,7 +22,9 @@ You’ll find us in many communities, helping to give girls a head start in life
 {{< col 3 >}}
 ## We give girls a voice
 We give girls the confidence, skills and information to make informed decisions.
+
 We offer a supportive, inclusive and exciting environment where they can reach their own conclusions about the world.
+
 We show them how they can speak out and take positive action to improve their lives and the lives of others.
 
 {{< /col >}}
