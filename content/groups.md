@@ -99,7 +99,7 @@ They can also make their voices heard by, for example, joining the guiding deleg
 > "Guiding lets girls think, learn and develop without having to put up with boys trying to be the centre of attention all the time!" <small>Philippa, 16</small>
 > "I've had amazing experiences no other organisation can offer.  And we really do get to have our say in stuff that matters." <small>Lucy, 23</small>
 
-{{< grouplist "senior section" >}}
+{{< grouplist "senior-section" >}}
 
 # Adults
 
