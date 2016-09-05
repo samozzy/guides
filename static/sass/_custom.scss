@@ -46,6 +46,10 @@ a[data-toggle="collapse"]:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.table, .table-responsive {
+	margin-bottom: 0;
+}
+
 // Nav bar
 .head-logo { // Logo in the top left
 	@include transition-all(all);

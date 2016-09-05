@@ -8,12 +8,26 @@
 			<div class="panel-heading">
 				<a data-toggle="collapse" data-target="#collapse{{$section}}" class="collapsea"><div style="width:100%">Our {{ humanize $section | title  }} groups <span class="glyphicon glyphicon-menu-down"></span></div></a>
 			</div>
-			<div class="collapse" id="collapse{{$section}}">
-				<div class="panel-body">
-					<p>{{ range $key, $item := index $.Site.Data.groups $section }}
-						Group: {{ $item.Name }}. Meets on: {{ $item.Day }}s.
-						{{ if ne (add $key 1) ($nogroups) }}<br />{{ end }}
-					{{ end }}</p>
+			<div class="panel-collapse collapse" id="collapse{{$section}}">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Unit</th>
+								<th>Meets on</th>
+								<th>Waiting List?</th>
+							</tr>
+						</thead>
+						<tbody>
+						{{ range $key, $item := index $.Site.Data.groups $section }}
+							<tr>
+								<td>{{ $item.Name }}</td>
+								<td>{{ $item.Day }}s</td>
+								<td {{if eq $item.Waiting "Yes"}} class="success" {{ else if eq $item.Waiting "No" }} class="danger" {{ end }} >{{ $item.Waiting }}</td>
+							</tr>
+						{{ end }}
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
