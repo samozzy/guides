@@ -2,23 +2,19 @@
 author = []
 categories = ["Uncategorized"]
 date = "2016-08-18T22:16:24+01:00"
-description = ""
+description = "We are very excited to have an active and enthusiastic Division team who will help you out with any questions or issues you may have."
 draft = false
 image = "/img/about-bg.jpg"
 tags = []
-title = "Division Team"
+title = "Meet the Team"
 
 +++
 
-# Meet the team
-We are very excited to have an active and enthusiastic Division team who will help you out with any questions or issues you may have.
-### Executive
+## Executive
 {{< team head >}}
-### Attenborough and Toton District
-{{< team attenborough-toton >}}
-### Beeston District
+## Beeston Team
 {{< team beeston >}}
-### Chilwell District
+## Chilwell Team
 {{< team chilwell >}}
-### Our advisors
+## Our advisors
 {{< team advisors >}}
