@@ -6,7 +6,7 @@ description = "For our members aged between 14 and 25, there are a wealth of opp
 draft = true
 image = "/img/about-bg.jpg"
 tags = []
-title = "Opportunities"
+title = "Get Involved"
 toc = true
 
 +++
@@ -48,7 +48,7 @@ Support your Queen's Guide Award or Duke of Edinburgh Award: find out more from 
 Gain transferable skills for your CV.
 To find out more go to the Senior Section Website or email Becca Drane who is our local Peer Educator.  -->
 
-# Young Leader Qualification
+# Qualifications
 
 The Young Leader Qualification is designed to help you take an active, positive part in running a Rainbow, Brownie or Guide unit. It is open to anyone in The Senior Section aged 14 to 18 and is a great opportunity to develop your leadership skills to help you in the future.
 
@@ -81,7 +81,7 @@ The Duke of Edinburgh Award is hugely popular and prestigious. It can also help 
 Look Wider is a personal development programme for The Senior Section. It's a great opportunity to try new things, to further your abilities in areas you’ve already experienced and to share your skills with others! You can take it on by yourself or as part of a group.
 Look Wider Resource
 
-# Senior Section Permits
+# Permits
 Taking The Senior Section Permit or Overnight Permit involves planning an indoor or outdoor camp with your peers. It means that you decide on the food, the activities, the people, the location – everything is down to you and your peers, which can be great fun! It is a great way to develop your leadership and organisational skills.
 
 Senior Section Permit

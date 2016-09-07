@@ -21,7 +21,7 @@ copyright = "&copy; 2016 Girlguiding"
 
 [[params.social]]
   title = "facebook"
-  url = "https://www.facebook.com/beestonGirlguiding"
+  url = "https://www.facebook.com/Beeston-and-Chilwell-Girl-Guiding-836013199868312/"
 [[params.social]]
   title = "twitter"
   url = "https://twitter.com/ggbeeston"
@@ -39,8 +39,8 @@ copyright = "&copy; 2016 Girlguiding"
   url = "/groups/"
   weight = 3
 [[menu.main]]
-  name = "Opportunities"
-  url = "/opportunities/"
+  name = "Get Involved"
+  url = "/get-involved/"
   weight = 4
 [[menu.main]]
   name = "Team"

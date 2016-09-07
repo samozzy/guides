@@ -26,13 +26,17 @@ blockquote {
 		margin: 0;
 	}
 }
+.content a {
+	text-decoration: none !important; //Override bootstrap
+	border-bottom: 1px solid $lightRasp;
+}
 
 a.btn {
 	text-decoration: none;
 	font-weight: bold;
 }
 a[href^="mailto"] {
-	text-decoration: none;
+	border-bottom: none;
 }
 a[data-toggle="collapse"]:hover {
 	text-decoration: none;
@@ -42,6 +46,10 @@ a[data-toggle="collapse"]:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.table, .table-responsive {
+	margin-bottom: 0;
+}
+
 // Nav bar
 .head-logo { // Logo in the top left
 	@include transition-all(all);
@@ -79,23 +87,47 @@ a[data-toggle="collapse"]:hover {
 div.top-toc { 
 	background: $ggBlue;
 	line-height: 2;
+	margin-top: -50px;
+	margin-bottom: 20px;
 	&.affix { // For when it floats
 		display: block;
-		z-index: 9;
+		z-index: 2;
 		top: 0;
 		margin: 0;
 		width: 100%;
+		@media only screen and (max-width: $sm-bs){
+			top: 60px;
+		}
+	}
+	@media only screen and (max-width: 350px){
+		display: none;
 	}
 }
 div.top-toc { // For when it's fixed
-	margin-top: -50px;
-	margin-bottom: 20px;
 }
 // So the submenu jumps go above the headers
-nav.top-toc > ul > li { 
-	> a {
-		color: $gray-darker;
-		white-space: nowrap;
+@media only screen and (max-width: $sm-bs){ // Make top-toc look nice on mobiles
+	nav.top-toc > ul {
+		margin-left: -20px;
+	}
+	nav.top-toc > ul,
+	.to-top > ul {
+		> li {
+			font-size: 12px;
+			width: 1%;
+			> a {
+				padding: 5px;
+			}
+		}
+	}
+}
+nav.top-toc > ul {
+	> li { 
+		display: table-cell;
+		> a {
+			color: $gray-darker;
+			white-space: nowrap;
+		}
 	}
 }
 
@@ -148,7 +180,8 @@ nav.top-toc > ul > li > ul {
 }
 // Striping on home page
 
-.home-banner:nth-of-type(even) {
+.home-banner:nth-of-type(even),
+.banner-blue {
 	background: $ggBlue;
 	color: $white;
 	blockquote * {
