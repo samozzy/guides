@@ -39,8 +39,8 @@ copyright = "&copy; 2016 Girlguiding"
   url = "/groups/"
   weight = 3
 [[menu.main]]
-  name = "Get Involved"
-  url = "/get-involved/"
+  name = "Adults"
+  url = "/adults/"
   weight = 4
 [[menu.main]]
   name = "Team"
