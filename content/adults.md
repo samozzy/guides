@@ -2,7 +2,6 @@
 date = "2016-09-07T15:40:05+01:00"
 description = "Our adult volunteers are an integral part of Girlguiding."
 draft = false
-image = "/img/about-bg.jpg"
 title = "Adults in Girlguiding"
 slug = "adults"
 toc = true

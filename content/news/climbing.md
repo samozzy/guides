@@ -4,7 +4,6 @@ categories = ["trip"]
 date = "2016-09-07T11:48:48+01:00"
 description = "5th Beeston Rainbows visited the Depot climbing center!"
 draft = true
-image = "/img/about-bg.jpg"
 tags = ["rainbows"]
 title = "Rainbows Go Climbing!"
 

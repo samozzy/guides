@@ -3,7 +3,6 @@ categories = ["Uncategorized"]
 date = "2016-07-13T21:20:27+01:00"
 description = ""
 draft = false
-image = "/img/about-bg.jpg"
 tags = ["test"]
 title = "This is a news post!"
 slug = "test"
