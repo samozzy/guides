@@ -186,7 +186,7 @@ hr.small {
 	// NOTE: Background images are set within the HTML using inline CSS!
 	@include background-cover;
 	background-color: $gray-light; 
-	background: no-repeat center center; 
+	background-position: center center; 
 	background-attachment: scroll;
 	margin-bottom: 50px;
 	.site-heading,

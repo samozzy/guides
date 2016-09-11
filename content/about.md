@@ -2,7 +2,6 @@
 date = "2016-08-04T01:16:28+01:00"
 description = ""
 draft = false
-image = "/img/about-bg.jpg"
 title = "About Beeston Guides"
 toc = true
 
