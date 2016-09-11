@@ -1,0 +1,45 @@
+{{ partial "header.html" . }}
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/about-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="page-heading">
+                      <h1>{{ .Title }}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ .Description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+	<div class="container">
+			<div class="row">
+			{{ if .TableOfContents }} 
+			<div class="col-lg-3 col-md-3 toc-wrapper">
+				<div class="toc-wrapper hide-on-small-and-down side-toc" data-spy="affix" data-offset-top=464 data-offset-bottom=300>
+					{{.TableOfContents}}
+				</div>
+			</div>
+			{{ end }}
+				<div class="
+					{{ if .TableOfContents }} col-lg-8 col-md-7 col-lg-9 
+					{{ else }} col-lg-12 col-md-10
+					{{ end }}">
+					<article>
+						{{.Content}}
+					</article>
+				</div>
+
+		</div>
+<!-- 		<div class="hide-on-med-and-up">
+			<i class="small_medium material-icons to-top"><a href="#">expand_less</a></i>
+		</div> -->
+	</div>
+</main>
+
+{{ partial "footer.html" . }}
