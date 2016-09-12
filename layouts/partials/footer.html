@@ -1,4 +1,4 @@
-    <hr>
+    {{ if or (ne .Section "") (eq .IsNode true) }} <hr> {{ end }}
     <!-- Footer -->
     <footer>
         <div class="container">
