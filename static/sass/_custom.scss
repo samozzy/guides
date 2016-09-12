@@ -17,6 +17,9 @@ body {
 .intro-header {
 	background-size:cover; //Ensure the hero image fits!
 }
+.subheading > small {
+	color: $secGrey;
+}
 blockquote {
 	border-color: $ggRasp;
 	small {
@@ -32,6 +35,9 @@ blockquote {
 .content a {
 	text-decoration: none !important; //Override bootstrap
 	border-bottom: 1px solid $lightRasp;
+}
+.content h1 a {
+	border-bottom: none;
 }
 
 a.btn {
