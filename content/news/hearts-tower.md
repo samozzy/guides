@@ -2,7 +2,7 @@
 author = "Beeston HQ"
 categories = ["activity"]
 date = "2016-09-07T12:15:09+01:00"
-description = "Our leaders said 'relax,'' and 1st Chilwell Brownies stacked Love Hearts!"
+description = "Our leaders said ''relax,'' and 1st Chilwell Brownies stacked Love Hearts!"
 draft = false
 tags = ["brownies"]
 title = "The Tower of Love"

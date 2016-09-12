@@ -1,4 +1,3 @@
-More about: {{ range .Params.categories }}
-	<a href="/categories/{{ urlize . }}" >{{ title . }}</a>, 
+{{ range .Params.categories }}
+	<a href="/categories/{{ urlize . }}" >{{ title . | pluralize }}</a>
 {{ end }}
-Tags: {{ delimit .Params.tags ", " }}
