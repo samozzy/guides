@@ -1,7 +1,7 @@
 +++
 author = "Beeston HQ"
 categories = ["activity"]
-date = "2016-09-07T12:14:58+01:00"
+date = "2016-05-27"
 description = "A messy, sticky, but sweetly scented afternoon was on the cards for 1st Chilwell Brownies."
 draft = false
 tags = ["brownies"]

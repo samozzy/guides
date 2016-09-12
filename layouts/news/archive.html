@@ -1,8 +1,16 @@
                <div class="post-preview">
-                  <p class="post-meta"><a href="{{ .Permalink }}">{{ .Title }}</a> on {{ dateFormat .Site.Params.DateForm .Date }}
-                    <br />
-                    {{ partial "categories.html" .}}
-                    <br />
-                    {{ partial "tags.html" .}}
+                  <p class="post-meta"><h1><a href="{{ .Permalink }}">{{ .Title }}</a><small> {{ dateFormat .Site.Params.DateForm .Date }}</small></h1>
+                  {{ if ne .Description "" }}
+                  	<blockquote><h4>{{ .Description | markdownify }}</h4></blockquote>
+                	{{ end }}
+                  <small>
+                  {{ if and (isset .Params "tags") (isset .Params "categories")}}
+                		Just one of the {{ partial "categories.html" . }} that our {{ partial "tags.html" . }} have done.
+              		{{ else if isset .Params "tags" }}
+                		Read more about our {{ partial "tags.html" . }}
+              		{{ else if isset .Params "categories" }}
+                		Take a look at more {{ partial "categories.html" . }}
+              		{{ end }} 
+              		</small>
                   </p>
                </div>
