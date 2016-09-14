@@ -106,7 +106,7 @@ hr.small {
 	@media only screen and (min-width: 768px) {
 		background: transparent;
 		border-bottom: 1px solid transparent;
-		.navbar-brand {
+		.navbar-brand { // Site title
 			color: $white;
 			padding: 20px;
 			&:hover,
@@ -114,14 +114,14 @@ hr.small {
 				color: fade($white, 80%);
 			}
 		}
-		.nav {
+		.nav { // Site menu
 			li {
 				a {
 					color: $white;
 					padding: 20px;
 					&:hover,
 					&:focus {
-						color: fade($white, 80%);
+						color: $theme-primary;
 					}
 				}
 			}

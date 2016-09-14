@@ -221,8 +221,18 @@ nav.top-toc > ul > li > ul {
 // For white-on-white text readability
 .site-heading,
 .page-heading,
-.post-heading {
+.post-heading,
+ {
 	@include black-font-border;
+}
+
+@media only screen and (min-width: $sm-bs) {
+	.navbar-right > li {
+		@include black-font-border;
+	}
+}
+.navbar-custom.is-fixed * {
+	text-shadow: none; //Override the above when the navbar floats
 }
 
 // Footer and copyright text
