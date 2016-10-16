@@ -1,11 +1,11 @@
-# Beeston GirlGuiding
+# Beeston and Chilwell GirlGuiding
 
 
 [![Build Status](https://travis-ci.org/samozzy/guides.svg?branch=master)](https://travis-ci.org/samozzy/guides)
 
-Static site for Beeston GirlGuiding Divisions.
+Static site for Beeston and Chilwell GirlGuiding Division.
 
-To replace website currently at: [beestongirlguiding.org.uk](http://www.beestongirlguiding.org.uk), constructed with BT Community Web Kit.
+To replace website currently at: [beestongirlguiding.org.uk](http://www.beestongirlguiding.org.uk), constructed with BT Community Web Kit (which has now gone offline).
 
 ## How?
 New website to be made with Hugo Static Site Generator, and hosted on GitHub.
@@ -14,6 +14,9 @@ This allows for version control as well as a discussion platform for development
 ## Publishing
 Using static pages means that all content pages are written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet  "Markdown Cheatsheet") (including this one), and a simple readup of the Markdown syntax gets you ready to write and edit content. Most things are written in plaintext.
 A user-friendly publishing system (that makes GitHub the backend, rather than having to go through commits and pull requests) for blog posts and the like is on its way.
+
+## Editing
+There are two main ways of editing this website, either by editing the code and markdown files directly, or using a friendlier interface with Forestry. There are details on all the shortcodes and other useful things on the wiki.
 
 ## Developing
 We are using [Hugo](http://gohugo.io) to generate a static website. To develop this on your own environment, you need to install the following:
