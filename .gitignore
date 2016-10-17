@@ -1,6 +1,5 @@
 #CSS, SASS and Compass things
 *.sass-cache*/
 
-static/css/
+# static/css/
 public/
-tmp/

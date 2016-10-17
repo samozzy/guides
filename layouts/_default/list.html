@@ -1,12 +1,12 @@
 {{ partial "header.html" . }}
 
     <!-- Page Header -->
-    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/hero/carnival.jpg')">
      <div class="container">
        <div class="row">
          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>{{ .Title }}</h1>
+             <h1>{{ if eq .Data.Singular "category"}}{{ .Title | pluralize }}{{ else }}{{ .Title }}{{ end }}</h1>
              <hr class="small">
              <span class="subheading">{{ .Description }}</span>
            </div>
@@ -18,11 +18,13 @@
     <!-- Main Content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-          {{ range .Paginator.Pages }}
-              {{ .Render "archive" }}
-          {{ end }}
-          {{ template "_internal/pagination.html" . }}
+        <div class="col-md-10 col-md-offset-1">
+          <div class="content">
+            {{ template "_internal/pagination.html" . }}
+            {{ range (.Paginator 5).Pages }}
+                {{ .Render "archive" }}
+            {{ end }}
+          </div>
         </div>
       </div>
     </div>

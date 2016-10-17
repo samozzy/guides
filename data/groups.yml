@@ -1,0 +1,68 @@
+  # Displayed in the following order unless otherwise specified
+rainbows:
+  - 
+    Name: "5th Beeston Rainbows"
+    Day: "Monday"
+    Waiting: "Yes"
+  -
+    Name: "2nd Beeston Rainbows"
+    Day: "Wednesday"
+    Waiting: "Yes"
+  -
+    Name: "6th Beeston Rainbows"
+    Day: "Thursday"
+    Waiting: "Yes"
+  -
+    Name: "4th Chilwell Rainbows"
+    Day: "Thursday"
+    Waiting: "Yes"
+brownies:
+  -
+    Name: "5th Beeston Brownies"
+    Day: "Monday"
+    Waiting: "Yes"
+  - 
+    Name: "6th Beeston Brownies"
+    Day: "Wednesday"
+    Waiting: "Yes"
+  -
+    Name: "1st Beeston Brownies"
+    Day: "Thursday"
+    Waiting: "Yes"
+  -
+    Name: "4th Beeston Brownies"
+    Day: "Thursday"
+    Waiting: "Yes"
+  -
+    Name: "1st Chilwell Brownies"
+    Day: "Friday"
+    Waiting: "No"
+  -
+    Name: "4th Chilwell Brownies"
+    Day: "Friday"
+    Waiting: "Yes"
+guides:
+  -
+    Name: "5th Beeston Guides"
+    Day: "Monday"
+    Waiting: "No"
+  -
+    Name: "6th Beeston Guides"
+    Day: "Tuesday"
+    Waiting: "No"
+  -
+    Name: "2nd Beeston Guides"
+    Day: "Thursday"
+    Waiting: "Yes"
+  -
+    Name: "1st Chilwell Guides"
+    Day: "Friday"
+    Waiting: "Yes"
+
+senior-section:
+  -
+    Name: "Beeston and Chilwell Senior Section"
+    Day: "Thursday"
+
+
+  # Add more following the above syntax below

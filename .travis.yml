@@ -1,13 +1,15 @@
 language: go
 go:
-  - 1.4
+  - 1.7
 sudo: false
 
 #Ready the project
 before_install:
   - rvm install 2.2.2
 install:
-  - go get github.com/spf13/hugo
+  # - go get -u -v github.com/spf13/hugo
+  - _bin/hugo-017.sh
+  #Get Hugo 0.17, as go get gets a dev version (bad)
   - gem install bundler
   - bundle install --without development --deployment --jobs=3 --retry=3 --binstubs
   #Given the Gemfile, bundle will install all the dependencies and nothing else is needed. 
@@ -17,12 +19,14 @@ cache:
 
 before_script: 
   - go vet ./...
+  - go clean
 script:
  - bin/compass compile -e production --force
- - hugo
+ - ~/hugo017 version
+ - ~/hugo017 
  # - bundle exec htmlproof public 
-after_success:
-  - _bin/deploy.sh
+# after_script:
+#   - _bin/deploy.sh
 # branches:
 #   only:
 #   - master
