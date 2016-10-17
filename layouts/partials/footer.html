@@ -1,4 +1,4 @@
-    <hr>
+    {{ if or (ne .Section "") ( and (eq .IsNode true) (eq .IsHome false) ) }} <hr> {{ end }}
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -189,6 +189,12 @@
         $('div.flickr > a > img').addClass('img-responsive');
       });
     </script>
+    <script> // Insert a <hr> before each <h1> on content pages.
+      $(document).ready(function() {
+        $('div.content > h1:nth-of-type(n+2)').prepend("<hr>");
+      });
+    </script>
+
     <script> // Google Maps
     function initMap() {
         var hq = {lat: 52.9223292, lng: -1.2160224};

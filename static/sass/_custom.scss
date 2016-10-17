@@ -11,12 +11,20 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
+// Page Layouts
+
 body {
 	position: relative; //For scrollspy to work
 }
 .intro-header {
 	background-size:cover; //Ensure the hero image fits!
 }
+.subheading > small {
+	color: $secGrey;
+}
+
+// Primary content blocks
+
 blockquote {
 	border-color: $ggRasp;
 	small {
@@ -32,6 +40,9 @@ blockquote {
 .content a {
 	text-decoration: none !important; //Override bootstrap
 	border-bottom: 1px solid $lightRasp;
+}
+.content h1 a {
+	border-bottom: none;
 }
 
 a.btn {
@@ -51,6 +62,9 @@ a[data-toggle="collapse"]:hover {
 }
 .table, .table-responsive {
 	margin-bottom: 0;
+	@media only screen and (max-width: $xs-bs) {
+		font-size: 14px;
+	}
 }
 
 // Nav bar
@@ -207,8 +221,18 @@ nav.top-toc > ul > li > ul {
 // For white-on-white text readability
 .site-heading,
 .page-heading,
-.post-heading {
+.post-heading,
+ {
 	@include black-font-border;
+}
+
+@media only screen and (min-width: $sm-bs) {
+	.navbar-right > li {
+		@include black-font-border;
+	}
+}
+.navbar-custom.is-fixed * {
+	text-shadow: none; //Override the above when the navbar floats
 }
 
 // Footer and copyright text

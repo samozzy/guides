@@ -1,9 +1,9 @@
 +++
 author = "Beeston HQ"
 categories = ["trip"]
-date = "2016-09-07T11:48:48+01:00"
+date = "2016-07-04"
 description = "5th Beeston Rainbows visited the Depot climbing center!"
-draft = true
+draft = false
 tags = ["rainbows"]
 title = "Rainbows Go Climbing!"
 
