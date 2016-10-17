@@ -22,8 +22,8 @@ before_script:
   - go clean
 script:
  - bin/compass compile -e production --force
- - ./hugo version
- - ./hugo 
+ - ./hugo017 version
+ - ./hugo017 
  # - bundle exec htmlproof public 
 # after_script:
 #   - _bin/deploy.sh
