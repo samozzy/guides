@@ -7,7 +7,9 @@ sudo: false
 before_install:
   - rvm install 2.2.2
 install:
-  - go get -u -v github.com/spf13/hugo
+  # - go get -u -v github.com/spf13/hugo
+  - _bin/hugo-017.sh
+  #Get Hugo 0.17, as go get gets a dev version (bad)
   - gem install bundler
   - bundle install --without development --deployment --jobs=3 --retry=3 --binstubs
   #Given the Gemfile, bundle will install all the dependencies and nothing else is needed. 
@@ -20,8 +22,8 @@ before_script:
   - go clean
 script:
  - bin/compass compile -e production --force
- - hugo version
- - hugo -v
+ - ./hugo version
+ - ./hugo 
  # - bundle exec htmlproof public 
 # after_script:
 #   - _bin/deploy.sh
