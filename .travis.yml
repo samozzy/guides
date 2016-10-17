@@ -19,6 +19,7 @@ before_script:
   - go vet ./...
 script:
  - bin/compass compile -e production --force
+ - hugo version
  - hugo
  # - bundle exec htmlproof public 
 # after_script:

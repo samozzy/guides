@@ -8,4 +8,4 @@ tags = []
 title = "badges"
 
 +++
-Not sure if we're keeping this page...  
+
