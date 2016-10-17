@@ -9,6 +9,7 @@ tar -xgz -f hugo*tar.gz
 echo "Extracted hugo"
 cd hugo*/
 mv hugo* ~/hugo
+ls ~/
 echo "Moved hugo to home directory"
 echo "Exiting"
 exit 0
