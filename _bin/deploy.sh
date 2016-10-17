@@ -26,4 +26,6 @@ git config user.name "guides-travis" #Setup Git to receive files
 git add -A # Stage the files!
 git commit -a -m "Deployment of $BRANCH into $TARGET | Travis Build $TRAVIS_BUILD_NUMBER for $TRAVIS_COMMIT"
 #Commit the files with a unique message
-git push --quiet origin $TARGET > /dev/null 2>&1 # Hiding all the output from git push command, to prevent token leak.
+echo "Pushing quietly..."
+git push --quiet origin $TARGET # Hiding all the output from git push command, to prevent token leak.
+echo "Pushed."
