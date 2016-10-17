@@ -10,7 +10,7 @@ echo "Extracted hugo"
 cd hugo*/
 mv hugo* ~/hugo017
 cd ~/
-ls ~/
+chmod +x hugo017
 echo "Moved hugo to home directory"
 echo "Exiting"
 exit 0
