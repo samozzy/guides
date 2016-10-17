@@ -1,6 +1,6 @@
 language: go
 go:
-  - 1.4
+  - 1.7
 sudo: false
 
 #Ready the project
@@ -17,6 +17,7 @@ cache:
 
 before_script: 
   - go vet ./...
+  - go clean
 script:
  - bin/compass compile -e production --force
  - hugo version
