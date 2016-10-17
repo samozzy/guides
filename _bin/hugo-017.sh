@@ -8,7 +8,7 @@ echo "Downloaded hugo"
 tar -xgz -f hugo*tar.gz
 echo "Extracted hugo"
 cd hugo*/
-mv hugo* ~/hugo
+mv hugo* ~/hugo017
 ls ~/
 echo "Moved hugo to home directory"
 echo "Exiting"
