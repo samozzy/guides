@@ -1,0 +1,331 @@
+// ==== Bootstrap === // 
+	// Import Bootstrap Compass integration
+	@import "bootstrap-compass";
+
+	// Import custom Bootstrap variables
+	@import "_bootstrap-variables";
+
+	// Import Bootstrap for Sass
+	@import "bootstrap";
+
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// Page Layouts
+
+body {
+	position: relative; //For scrollspy to work
+}
+.intro-header {
+	background-size:cover; //Ensure the hero image fits!
+}
+.subheading > small {
+	color: $secGrey;
+}
+
+// Primary content blocks
+
+blockquote {
+	border-color: $ggRasp;
+	small {
+		color: $ggRasp; 
+	}
+	footer {
+	padding: 10px 0 0 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+.content a {
+	text-decoration: none !important; //Override bootstrap
+	border-bottom: 1px solid $lightRasp;
+}
+.content h1 a {
+	border-bottom: none;
+}
+
+a.btn {
+	text-decoration: none;
+	font-weight: bold;
+}
+a[href^="mailto"] {
+	border-bottom: none;
+}
+a[data-toggle="collapse"]:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.panel p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.table, .table-responsive {
+	margin-bottom: 0;
+	@media only screen and (max-width: $xs-bs) {
+		font-size: 14px;
+	}
+}
+
+// Nav bar
+.head-logo { // Logo in the top left
+	@include transition-all(all);
+	background: url('../img/branding/ggse-head.png') no-repeat;
+	background-size: 100%;
+	margin-top: 30px;
+	height: 170px;
+	width: 250px;
+	@media only screen and (max-width: 992px) { //For the toggle menu and to prevent overlap
+		height: 60px;
+		width: 92px;
+		margin: 0 0 0 30px;
+	}
+}
+.navbar.shrink .head-logo { // Make the logo smaller when we scroll, so it fits in the incoming menu
+	height: 60px;
+	width: 92px;
+	margin-top: 0;
+}
+.navbar-custom {
+	@media (max-width: 768px) { // Keep the toggle menu always visible
+		position: fixed !important;
+	}
+	@media only screen and (min-width: 768px) { // Make .Site.Title only visible in the floating menu
+		.visible-shrink { // Only visible when 'shrink' is active. 
+			display: none !Important;
+			&.shrink {
+				display: block !important;
+			}
+		}
+	}
+}
+
+// Floating submenu (using Table of Contents)
+div.top-toc { 
+	background: $ggBlue;
+	line-height: 2;
+	margin-top: -50px;
+	margin-bottom: 20px;
+	&.affix { // For when it floats
+		display: block;
+		z-index: 2;
+		top: 0;
+		margin: 0;
+		width: 100%;
+		@media only screen and (max-width: $sm-bs){
+			top: 60px;
+		}
+	}
+	@media only screen and (max-width: 350px){
+		display: none;
+	}
+}
+div.top-toc { // For when it's fixed
+}
+// So the submenu jumps go above the headers
+@media only screen and (max-width: $sm-bs){ // Make top-toc look nice on mobiles
+	nav.top-toc > ul {
+		margin-left: -20px;
+	}
+	nav.top-toc > ul,
+	.to-top > ul {
+		> li {
+			font-size: 12px;
+			width: 1%;
+			> a {
+				padding: 5px;
+			}
+		}
+	}
+}
+nav.top-toc > ul {
+	> li { 
+		display: table-cell;
+		> a {
+			color: $gray-darker;
+			white-space: nowrap;
+		}
+	}
+}
+
+// Pretty submenu things
+nav.top-toc > ul, //Make the submenu look like a navbar, without using the world of classes
+.to-top > ul, {
+	@extend .nav, .nav-pills, .nav-justified; //So much Bootstrap! >_<
+	@include sans-serif-font;
+}
+.to-top > ul > li { //Make the "top" icon do what the text does without looking terrible
+	> a:hover,
+	> a:focus {
+		color: $lightBlue;
+		background: none;
+	}
+	> a:focus {
+		color: $gray-lighter; // Overwrite the above
+	}
+}
+nav.top-toc > ul {
+	> li.active > a,
+	> li:hover, > li > a:hover,
+	> li:focus, > li > a:focus,
+	> li.active:hover, > li.active > a:hover,
+	> li.active:focus, > li.active > a:focus, { // I'm sure there's a way to not use so many selectors...
+		background-color: $lightBlue;
+		color: $gray-lighter;
+	}
+}
+
+nav.top-toc > ul > li > ul {
+	display: none; // Prevent <h2> and beyond being generated
+}
+
+// Table of Contents on the side of articles
+
+.side-toc {
+	@include sans-serif-font;
+	font-size: 18px;
+	ul, ul ul {
+		list-style-type: none;
+		line-height: 4;
+		a {
+			color: $gray-light;
+		}
+	}
+	&.affix {
+		top:40px !important;
+	}
+}
+// Striping on home page
+
+.home-banner:nth-of-type(even),
+.banner-blue {
+	background: $ggBlue;
+	color: $white;
+	blockquote * {
+		color: $white;
+		small {
+			color: $ggRasp;
+		}
+	}
+}
+
+// Nav bar adjustments
+.navbar-brand {
+	font-size: $fs_body;
+	margin-left: 30px !important;
+}
+.nav {
+	margin-right: 30px;
+}
+
+// For white-on-white text readability
+.site-heading,
+.page-heading,
+.post-heading,
+ {
+	@include black-font-border;
+}
+
+@media only screen and (min-width: $sm-bs) {
+	.navbar-right > li {
+		@include black-font-border;
+	}
+}
+.navbar-custom.is-fixed * {
+	text-shadow: none; //Override the above when the navbar floats
+}
+
+// Footer and copyright text
+footer {
+	// background: $gray-dark;
+	// @include gradient-vertical($white,$gray-dark,0%,15%);
+	li, span, a {
+		@extend .copyright;
+		@extend .text-muted;
+		line-height: 1.5;
+		text-align: left !important; // Override bootstrap
+		color: $ggRasp;
+	}
+	a:hover, a:focus {
+		color: $lightRasp;
+		text-decoration: none;
+	}
+}
+// Social icon adjustment
+li.footer_icons {
+	.fa-circle {
+		color: $ggRasp;
+	}
+	:hover {
+		.fa-circle {
+			color: $lightRasp;
+		}
+	}
+}
+
+// clean-blog overrides
+a {
+	img {
+		&:hover, &:focus {
+			cursor: auto !important;
+		}
+	}
+}
+%pullquote-mobile {
+	@media only screen and (max-width: $sm-bs) { //Override everything on smaller screens
+		float: left;
+    margin: -20px 10px 10px 10px !important;
+    width: 100%;
+    max-width: 100% !important; //override sides
+    text-align: center !important;
+    border: none !important; //such as to override sides
+	}
+}
+
+//Fancy pullquote things
+.pullquote {
+	&:before {
+		position: relative;
+		content: attr(data-pullquote);
+		padding: 5px;
+		font-size: $font-size-h3;
+		color: $ggRasp;
+		max-width: 50%;
+	}
+	@each $side in left, right, center {
+		&.pullquote-#{$side}:before{
+			margin: 10px 30px 0 30px;
+			@if $side == center {
+				float: left;
+				margin: -20px 10px 10px 10px;
+				width: 100%;
+				max-width: 100% !important;
+				padding: 5px;
+				text-align: center;
+			}
+			@else {
+				float: $side ;
+				margin-#{$side}: 0;
+				border-#{$side}: 5px solid $lightestRasp;
+				padding-#{$side}: 10px;
+				text-align: $side;
+				@extend %pullquote-mobile;
+			}
+		}
+	}
+}
+@each $side in left, right, center {
+	hr.pullquote-#{$side} {
+		border-color: $lightestRasp;
+		@if $side == center {
+			width: 20%;
+		}
+		@else {
+			display: none;
+			@media only screen and (max-width: $sm-bs) {
+				width: 20%;
+				display: block;
+			}
+		}
+	}
+}
