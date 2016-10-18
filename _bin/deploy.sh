@@ -17,7 +17,7 @@ if [ "$TRAVIS_BRANCH" == "master" ];
 fi
 
 rm -rf $TARGET #Cleanup the working directory
-git clone -b $TARGET https://${GH_TOKEN}@${GH_REF} $TARGET #Get the target branch
+git clone -b $TARGET https://${GH-TOKEN}@${GH_REF} $TARGET #Get the target branch
 cp -R public/* $TARGET #Copy the Hugo output to the new location
 
 cd $TARGET
