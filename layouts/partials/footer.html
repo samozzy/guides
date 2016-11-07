@@ -253,6 +253,12 @@
       $(document).ready(function() {
         $('#directoryTable').DataTable();
       } );
+
+      $(document).ready(function() {
+        $('th.sorting > span.glyphicon').removeClass("glyphicon glyphicon-sort-by-attributes");
+        $("th.sorting_desc > span.glyphicon ").addClass("glyphicon-sort-by-attributes-alt");
+        $("th.sorting_alt > span.glyphicon ").addClass("glyphicon-sort-by-attributes");
+      });
     </script>
     {{ if isset .Site.Params "Ganalytics" }}{{ partial "ga.html" . }}{{ end }}
 

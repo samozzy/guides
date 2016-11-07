@@ -7,13 +7,13 @@ title = "Directory"
 +++
 
 <div class="table-responsive">
-	<table class="table table-striped table-hover"  id="directoryTable">
+	<table class="table table-striped table-hover" id="directoryTable">
 		<thead>
 			<tr>
-				<th>Unit {{< glyph sort-by-attributes >}}</th>
-				<th>Name {{< glyph sort-by-attributes >}}</th>
-				<th>Position {{< glyph sort-by-attributes >}}</th>
-				<th>Email address {{< glyph sort-by-attributes >}}</th>
+				<th>Unit</th>
+				<th>Name</th>
+				<th>Position</th>
+				<th>Email address</th>
 			</tr>
 		</thead>
 		<tbody>

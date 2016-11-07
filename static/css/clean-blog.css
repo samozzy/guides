@@ -9221,7 +9221,46 @@ hr.pullquote-center {
   width: 20%;
 }
 
-/* line 25, ../sass/clean-blog.scss */
+/* line 1, ../sass/_datatables.scss */
+.dataTables_paginate,
+.dataTables_filter {
+  text-align: right;
+}
+
+/* line 6, ../sass/_datatables.scss */
+.dataTables_info {
+  margin-top: 25px;
+}
+
+/* line 10, ../sass/_datatables.scss */
+th.sorting_asc,
+th.sorting_desc {
+  color: #C40063;
+}
+
+/* line 16, ../sass/_datatables.scss */
+.dataTable th.sorting:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e150";
+  padding-right: 3px;
+  font-size: 16px;
+}
+/* line 22, ../sass/_datatables.scss */
+.dataTable th.sorting_asc:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e151";
+  padding-right: 3px;
+  font-size: 16px;
+}
+/* line 28, ../sass/_datatables.scss */
+.dataTable th.sorting_desc:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e152";
+  padding-right: 3px;
+  font-size: 16px;
+}
+
+/* line 26, ../sass/clean-blog.scss */
 body {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -9229,17 +9268,17 @@ body {
   -webkit-tap-highlight-color: #C40063;
 }
 
-/* line 34, ../sass/clean-blog.scss */
+/* line 35, ../sass/clean-blog.scss */
 p {
   line-height: 1.5;
   margin: 30px 0;
 }
-/* line 37, ../sass/clean-blog.scss */
+/* line 38, ../sass/clean-blog.scss */
 p a {
   text-decoration: underline;
 }
 
-/* line 42, ../sass/clean-blog.scss */
+/* line 43, ../sass/clean-blog.scss */
 h1,
 h2,
 h3,
@@ -9250,26 +9289,26 @@ h6 {
   font-weight: 800;
 }
 
-/* line 52, ../sass/clean-blog.scss */
+/* line 53, ../sass/clean-blog.scss */
 a {
   color: #333333;
 }
-/* line 54, ../sass/clean-blog.scss */
+/* line 55, ../sass/clean-blog.scss */
 a:hover, a:focus {
   color: #C40063;
 }
-/* line 58, ../sass/clean-blog.scss */
+/* line 59, ../sass/clean-blog.scss */
 a img:hover, a img:focus {
   cursor: zoom-in;
 }
 
-/* line 64, ../sass/clean-blog.scss */
+/* line 65, ../sass/clean-blog.scss */
 blockquote {
   color: #777777;
   font-style: italic;
 }
 
-/* line 69, ../sass/clean-blog.scss */
+/* line 70, ../sass/clean-blog.scss */
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -9277,7 +9316,7 @@ hr.small {
   border-color: #FFF;
 }
 
-/* line 78, ../sass/clean-blog.scss */
+/* line 79, ../sass/clean-blog.scss */
 .navbar-custom {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
   position: absolute;
@@ -9286,18 +9325,18 @@ hr.small {
   width: 100%;
   z-index: 3;
 }
-/* line 85, ../sass/clean-blog.scss */
+/* line 86, ../sass/clean-blog.scss */
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
-/* line 89, ../sass/clean-blog.scss */
+/* line 90, ../sass/clean-blog.scss */
 .navbar-custom .navbar-header .navbar-toggle {
   color: #777777;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 98, ../sass/clean-blog.scss */
+/* line 99, ../sass/clean-blog.scss */
 .navbar-custom .nav li a, .navbar-custom nav.top-toc > ul li a,
 .navbar-custom .to-top > ul li a {
   text-transform: uppercase;
@@ -9306,27 +9345,27 @@ hr.small {
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 78, ../sass/clean-blog.scss */
+  /* line 79, ../sass/clean-blog.scss */
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
   }
-  /* line 109, ../sass/clean-blog.scss */
+  /* line 110, ../sass/clean-blog.scss */
   .navbar-custom .navbar-brand {
     color: #FFF;
     padding: 20px;
   }
-  /* line 112, ../sass/clean-blog.scss */
+  /* line 113, ../sass/clean-blog.scss */
   .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
     color: fade(#FFF, 80%);
   }
-  /* line 119, ../sass/clean-blog.scss */
+  /* line 120, ../sass/clean-blog.scss */
   .navbar-custom .nav li a, .navbar-custom nav.top-toc > ul li a,
   .navbar-custom .to-top > ul li a {
     color: #FFF;
     padding: 20px;
   }
-  /* line 122, ../sass/clean-blog.scss */
+  /* line 123, ../sass/clean-blog.scss */
   .navbar-custom .nav li a:hover, .navbar-custom nav.top-toc > ul li a:hover,
   .navbar-custom .to-top > ul li a:hover, .navbar-custom .nav li a:focus, .navbar-custom nav.top-toc > ul li a:focus,
   .navbar-custom .to-top > ul li a:focus {
@@ -9334,7 +9373,7 @@ hr.small {
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 78, ../sass/clean-blog.scss */
+  /* line 79, ../sass/clean-blog.scss */
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -9348,7 +9387,7 @@ hr.small {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  /* line 142, ../sass/clean-blog.scss */
+  /* line 143, ../sass/clean-blog.scss */
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
@@ -9359,26 +9398,26 @@ hr.small {
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
-  /* line 151, ../sass/clean-blog.scss */
+  /* line 152, ../sass/clean-blog.scss */
   .navbar-custom.is-fixed .navbar-brand {
     color: #333333;
   }
-  /* line 153, ../sass/clean-blog.scss */
+  /* line 154, ../sass/clean-blog.scss */
   .navbar-custom.is-fixed .navbar-brand:hover, .navbar-custom.is-fixed .navbar-brand:focus {
     color: #C40063;
   }
-  /* line 160, ../sass/clean-blog.scss */
+  /* line 161, ../sass/clean-blog.scss */
   .navbar-custom.is-fixed .nav li a, .navbar-custom.is-fixed nav.top-toc > ul li a,
   .navbar-custom.is-fixed .to-top > ul li a {
     color: #333333;
   }
-  /* line 162, ../sass/clean-blog.scss */
+  /* line 163, ../sass/clean-blog.scss */
   .navbar-custom.is-fixed .nav li a:hover, .navbar-custom.is-fixed nav.top-toc > ul li a:hover,
   .navbar-custom.is-fixed .to-top > ul li a:hover, .navbar-custom.is-fixed .nav li a:focus, .navbar-custom.is-fixed nav.top-toc > ul li a:focus,
   .navbar-custom.is-fixed .to-top > ul li a:focus {
     color: #C40063;
   }
-  /* line 170, ../sass/clean-blog.scss */
+  /* line 171, ../sass/clean-blog.scss */
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
@@ -9391,7 +9430,7 @@ hr.small {
   }
 }
 
-/* line 185, ../sass/clean-blog.scss */
+/* line 186, ../sass/clean-blog.scss */
 .intro-header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9402,7 +9441,7 @@ hr.small {
   background-attachment: scroll;
   margin-bottom: 50px;
 }
-/* line 192, ../sass/clean-blog.scss */
+/* line 193, ../sass/clean-blog.scss */
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -9410,25 +9449,25 @@ hr.small {
   color: #FFF;
 }
 @media only screen and (min-width: 768px) {
-  /* line 192, ../sass/clean-blog.scss */
+  /* line 193, ../sass/clean-blog.scss */
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
     padding: 150px 0 100px;
   }
 }
-/* line 201, ../sass/clean-blog.scss */
+/* line 202, ../sass/clean-blog.scss */
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
 }
-/* line 204, ../sass/clean-blog.scss */
+/* line 205, ../sass/clean-blog.scss */
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 50px;
 }
-/* line 208, ../sass/clean-blog.scss */
+/* line 209, ../sass/clean-blog.scss */
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
@@ -9439,104 +9478,104 @@ hr.small {
   margin: 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 217, ../sass/clean-blog.scss */
+  /* line 218, ../sass/clean-blog.scss */
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
     font-size: 80px;
   }
 }
-/* line 223, ../sass/clean-blog.scss */
+/* line 224, ../sass/clean-blog.scss */
 .intro-header .post-heading h1 {
   font-size: 35px;
 }
-/* line 226, ../sass/clean-blog.scss */
+/* line 227, ../sass/clean-blog.scss */
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
   line-height: 1.1;
   display: block;
 }
-/* line 231, ../sass/clean-blog.scss */
+/* line 232, ../sass/clean-blog.scss */
 .intro-header .post-heading .subheading {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
-/* line 237, ../sass/clean-blog.scss */
+/* line 238, ../sass/clean-blog.scss */
 .intro-header .post-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
 }
-/* line 242, ../sass/clean-blog.scss */
+/* line 243, ../sass/clean-blog.scss */
 .intro-header .post-heading .meta a {
   color: #FFF;
 }
 @media only screen and (min-width: 768px) {
-  /* line 247, ../sass/clean-blog.scss */
+  /* line 248, ../sass/clean-blog.scss */
   .intro-header .post-heading h1 {
     font-size: 55px;
   }
-  /* line 250, ../sass/clean-blog.scss */
+  /* line 251, ../sass/clean-blog.scss */
   .intro-header .post-heading .subheading {
     font-size: 30px;
   }
 }
 
-/* line 260, ../sass/clean-blog.scss */
+/* line 261, ../sass/clean-blog.scss */
 .post-preview > a {
   color: #333333;
 }
-/* line 262, ../sass/clean-blog.scss */
+/* line 263, ../sass/clean-blog.scss */
 .post-preview > a:hover, .post-preview > a:focus {
   text-decoration: none;
   color: #C40063;
 }
-/* line 267, ../sass/clean-blog.scss */
+/* line 268, ../sass/clean-blog.scss */
 .post-preview > a > .post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-/* line 272, ../sass/clean-blog.scss */
+/* line 273, ../sass/clean-blog.scss */
 .post-preview > a > .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-/* line 278, ../sass/clean-blog.scss */
+/* line 279, ../sass/clean-blog.scss */
 .post-preview > .post-meta {
   color: #777777;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
-/* line 283, ../sass/clean-blog.scss */
+/* line 284, ../sass/clean-blog.scss */
 .post-preview > .post-meta > a {
   text-decoration: none;
   color: #333333;
 }
-/* line 286, ../sass/clean-blog.scss */
+/* line 287, ../sass/clean-blog.scss */
 .post-preview > .post-meta > a:hover, .post-preview > .post-meta > a:focus {
   color: #C40063;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
-  /* line 295, ../sass/clean-blog.scss */
+  /* line 296, ../sass/clean-blog.scss */
   .post-preview > a > .post-title {
     font-size: 36px;
   }
 }
 
-/* line 304, ../sass/clean-blog.scss */
+/* line 305, ../sass/clean-blog.scss */
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
   font-weight: 700;
 }
 
-/* line 310, ../sass/clean-blog.scss */
+/* line 311, ../sass/clean-blog.scss */
 .caption {
   text-align: center;
   font-size: 14px;
@@ -9548,23 +9587,23 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 
-/* line 321, ../sass/clean-blog.scss */
+/* line 322, ../sass/clean-blog.scss */
 footer {
   padding: 50px 0 65px;
 }
-/* line 323, ../sass/clean-blog.scss */
+/* line 324, ../sass/clean-blog.scss */
 footer .list-inline {
   margin: 0;
   padding: 0;
 }
-/* line 327, ../sass/clean-blog.scss */
+/* line 328, ../sass/clean-blog.scss */
 footer .copyright, footer li, footer span, footer a {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
 }
 
-/* line 336, ../sass/clean-blog.scss */
+/* line 337, ../sass/clean-blog.scss */
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
@@ -9572,7 +9611,7 @@ footer .copyright, footer li, footer span, footer a {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 342, ../sass/clean-blog.scss */
+/* line 343, ../sass/clean-blog.scss */
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -9586,7 +9625,7 @@ footer .copyright, footer li, footer span, footer a {
   box-shadow: none !important;
   resize: none;
 }
-/* line 355, ../sass/clean-blog.scss */
+/* line 356, ../sass/clean-blog.scss */
 .floating-label-form-group label {
   display: block;
   z-index: 0;
@@ -9603,33 +9642,33 @@ footer .copyright, footer li, footer span, footer a {
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
-/* line 371, ../sass/clean-blog.scss */
+/* line 372, ../sass/clean-blog.scss */
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;
 }
 
-/* line 378, ../sass/clean-blog.scss */
+/* line 379, ../sass/clean-blog.scss */
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 
-/* line 385, ../sass/clean-blog.scss */
+/* line 386, ../sass/clean-blog.scss */
 .floating-label-form-group-with-focus label {
   color: #C40063;
 }
 
-/* line 390, ../sass/clean-blog.scss */
+/* line 391, ../sass/clean-blog.scss */
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 
-/* line 423, ../sass/clean-blog.scss */
+/* line 424, ../sass/clean-blog.scss */
 .pager {
   margin: 20px 0 0;
 }
-/* line 428, ../sass/clean-blog.scss */
+/* line 429, ../sass/clean-blog.scss */
 .pager li > a,
 .pager li > span {
   font-family: 'TrebuchetGG','Trebuchet','Trebuchet MS',Helvetica, Arial, sans-serif;
@@ -9641,14 +9680,14 @@ form .row:first-child .floating-label-form-group {
   background-color: #FFF;
   border-radius: 0;
 }
-/* line 440, ../sass/clean-blog.scss */
+/* line 441, ../sass/clean-blog.scss */
 .pager li > a:hover,
 .pager li > a:focus {
   color: #FFF;
   background-color: #C40063;
   border: 1px solid #C40063;
 }
-/* line 449, ../sass/clean-blog.scss */
+/* line 450, ../sass/clean-blog.scss */
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -9658,27 +9697,27 @@ form .row:first-child .floating-label-form-group {
   cursor: not-allowed;
 }
 
-/* line 462, ../sass/clean-blog.scss */
+/* line 463, ../sass/clean-blog.scss */
 ::-moz-selection {
   color: #FFF;
   text-shadow: none;
   background: #C40063;
 }
 
-/* line 468, ../sass/clean-blog.scss */
+/* line 469, ../sass/clean-blog.scss */
 ::selection {
   color: #FFF;
   text-shadow: none;
   background: #C40063;
 }
 
-/* line 474, ../sass/clean-blog.scss */
+/* line 475, ../sass/clean-blog.scss */
 img::selection {
   color: #FFF;
   background: transparent;
 }
 
-/* line 479, ../sass/clean-blog.scss */
+/* line 480, ../sass/clean-blog.scss */
 img::-moz-selection {
   color: #FFF;
   background: transparent;

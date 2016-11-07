@@ -1,0 +1,34 @@
+.dataTables_paginate,
+.dataTables_filter {
+	text-align: right;
+}
+
+.dataTables_info {
+	margin-top: 25px;
+}
+
+th.sorting_asc,
+th.sorting_desc {
+	color: $ggRasp;
+}
+
+.dataTable {
+	th.sorting:before {
+	  font-family: "Glyphicons Halflings";
+	  content: "\e150";
+	  padding-right: 3px;
+	  font-size: $fs_body - 4px;
+	}
+	th.sorting_asc:before {
+		font-family: "Glyphicons Halflings";
+		content: "\e151";
+		padding-right: 3px;
+		font-size: $fs_body - 4px;
+	}
+	th.sorting_desc:before {
+		font-family: "Glyphicons Halflings";
+		content: "\e152";
+		padding-right: 3px;
+		font-size: $fs_body - 4px;
+	}
+}
