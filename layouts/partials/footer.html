@@ -53,6 +53,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ .Site.BaseURL }}/js/bootstrap.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ .Site.BaseURL }}/js/clean-blog.js"></script>
@@ -243,6 +246,13 @@
     </script>
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl64bhjcpxtwBxXkgkMIhA96_CGTyId9s&callback=initMap">
+    </script>
+
+    <!-- DataTable -->
+    <script>
+      $(document).ready(function() {
+        $('#directoryTable').DataTable();
+      } );
     </script>
     {{ if isset .Site.Params "Ganalytics" }}{{ partial "ga.html" . }}{{ end }}
 

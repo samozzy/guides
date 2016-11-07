@@ -1,0 +1,8 @@
+{{ range $key, $item := index $.Site.Data.directory }}
+<tr>
+	<td>{{ if $item.Unit }}{{ $item.Unit }}{{ else }}N/a{{ end }}</td>
+	<td>{{ $key }}</td>
+	<td>{{ if $item.Position }}{{ $item.Position }}{{ else }}N/a{{ end }}</td>
+	<td>{{ if $item.Email }}<a href="mailto:{{ $item.Email }}">{{ $item.Email }}</a>{{ else }}N/a{{ end }}</td>
+</tr>
+{{ end }}
