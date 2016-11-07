@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://samozzy.github.io/guides"
 languageCode = "en-gb"
 title = "Girlguiding Beeston and Chilwell"
 publishdir = "public"
