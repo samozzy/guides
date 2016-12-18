@@ -16,14 +16,19 @@ if [ "$TRAVIS_BRANCH" == "master" ];
 		exit 0;
 fi
 
-rm -rf $TARGET #Cleanup the working directory
-git clone -b $TARGET https://${GH_TOKEN}@${GH_REF} $TARGET #Get the target branch
-cp -R public/* $TARGET #Copy the Hugo output to the new location
+if [[ $TRAVIS_PULL_REQUEST == "false" ]]
+	then
+		rm -rf $TARGET #Cleanup the working directory
+		git clone -b $TARGET https://${GH_TOKEN}@${GH_REF} $TARGET #Get the target branch
+		cp -R public/* $TARGET #Copy the Hugo output to the new location
 
-cd $TARGET
-git config user.email "sam.tosborne@googlemail.com"
-git config user.name "guides-travis" #Setup Git to receive files
-git add -A # Stage the files!
-git commit -a -m "Deployment of $BRANCH into $TARGET | Travis Build $TRAVIS_BUILD_NUMBER for $TRAVIS_COMMIT"
-#Commit the files with a unique message
-git push --quiet origin $TARGET > /dev/null 2>&1 # Hiding all the output from git push command, to prevent token leak.
+		cd $TARGET
+		git config user.email "sam.tosborne@googlemail.com"
+		git config user.name "guides-travis" #Setup Git to receive files
+		git add -A # Stage the files!
+		git commit -a -m "Deployment of $BRANCH into $TARGET | Travis Build $TRAVIS_BUILD_NUMBER for $TRAVIS_COMMIT"
+		#Commit the files with a unique message
+		echo "Pushing quietly..."
+		git push --quiet origin $TARGET # Hiding all the output from git push command, to prevent token leak.
+		echo "Pushed."
+fi
