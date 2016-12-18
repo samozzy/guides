@@ -8,7 +8,7 @@ title = "1"
 # Girlguiding opens a world of opportunities that will last a lifetime
 {{< /center >}}
 
-Beeston and Chilwell Division has over 650 members across 15 groups across all of Beeston and Chilwell. Our members are of all ages, spanning our Rainbows, Brownies, Guides, Senior Section and adult volunteers - including many students from the University of Nottingham.
+Beeston and Chilwell Division has over 330 members across 15 groups across all of Beeston and Chilwell. Our members are of all ages, spanning our Rainbows, Brownies, Guides, Senior Section and adult volunteers - including many students from the University of Nottingham.
 
 Being a member of Girlguiding opens a world of opportunities that will last a lifetime. It provides a safe, girl-only space to explore activities, issues and possibilities that are available to girls today.
 
