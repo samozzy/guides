@@ -14,7 +14,7 @@ toc = true
 <div id="map" style="height:300px"></div>
 {{< /col >}}
 {{< col 2 >}}
-All of our Beeston-based meetings take place at Beeston HQ, our Girlguiding venue.
+Our units meet at various venues across Beeston and Chilwell, and we are also lucky enough to have a share in our very own Girlguiding building - Beeston HQ.
 
 **Address**  
 Beeston HQ,  

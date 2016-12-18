@@ -10,10 +10,9 @@ toc = true
 
 # Adults
 
-Girlguiding UK isn't just for girls. In Beeston and Chilwell Division, we have around 160 adult volunteers. 
+Girlguiding UK isn't just for girls. In Beeston and Chilwell Division, we have around 80 adult volunteers. 
 
-Whatever level of commitment you can make - from ocassional 'behind-the-scenes' support, to planning and leading activities every week - we'd love to have you on the team. In return for your time, we offer training and the opportunity to develop new skills.
-
+Whatever level of commitment you can make - from ocassional 'behind-the-scenes' support, to planning and leading activities every week - we'd love to have you on the team. In return for your time, we offer training, the opportunity to develop new skills and lots of fun.
 
 There are many volunteer roles in guiding. Many volunteers give their time as Leaders or Assistant Leaders for guiding units and get to see girls enjoying events and activities that they have organised. Other volunteers take on administrative responsibilities, or help out with driving or maintenance on an occasional basis.
 
