@@ -59,8 +59,6 @@ As a volunteer you’ll also gain from the experience by making new friends and 
 
 Volunteers make Guiding happen! Be part of it.
 
-<hr>
-
 # Trefoil Guild 
 {{< pull  "Sharing your skills, experience, wisdom, nurturing the young – keeping the fun and adventure of Guiding alive." center>}}
 The Trefoil Guild offers a warm welcome to everyone, male or female, aged 18 or over, whether or not they have previously been connected with the Guide Movement.  
