@@ -27,16 +27,9 @@ NG9 1GL
 
 # Getting Here
 {{< row >}}
-
 {{< col 3 >}}
-### {{< fa car >}} By road 
-
-Via the M1, get off on Junction 25 and follow signs towards Beeston via the A52 (Brian Clough Way)
-{{< /col >}}
-
-{{< col 3 >}}
-### {{< fa train >}} By train 
-Beeston HQ is around a 10-15 minute walk from Beeston train station, which is easily accessible from Nottingham station, with trains running every 30-60 minutes.
+### {{< fa female >}} By foot 
+From Beeston Centre, or the Beeston Interchange, head towards the Scout Centre, and then follow signs for Beeston Community Centre, which will take you up West End. We're approx. 10 minutes' walk from Beeston Interchange.
 {{< /col >}}
 
 {{< col 3 >}}
@@ -44,17 +37,24 @@ Beeston HQ is around a 10-15 minute walk from Beeston train station, which is ea
 We recommend catching one of the many buses to Beeston Interchange and then following the 'on foot' directions.
 Buses calling at Beeston Interchange include the Indigo, 18, Skylink, Y5, Y36 and 36B.
 {{< /col >}}
-{{< /row >}}
-{{< row >}}
+
 {{< col 3 >}}
 ### {{< fa subway >}} By tram 
 The nearest tram stop is Beeston Centre (also known as Beeston Interchange), and trams run up to every 10 minutes during peak times. 
 {{< /col >}}
+{{< /row >}}
+
+{{< row >}}
+{{< col 3 >}}
+### {{< fa train >}} By train 
+Beeston HQ is around a 10-15 minute walk from Beeston train station, which is easily accessible from Nottingham station, with trains running every 30-60 minutes.
+{{< /col >}}
 
 {{< col 3 >}}
-### {{< fa male >}} By foot 
-From Beeston Centre, or the Beeston Interchange, head towards the Scout Centre, and then follow directions for Beeston Community Centre, which will take you up West End. We're approx. 10 minutes' walk from Beeston Interchange.
+### {{< fa car >}} By road 
+Via the M1, get off on Junction 25 and follow signs towards Beeston via the A52 (Brian Clough Way)
 {{< /col >}}
+
 {{< /row >}}
 
 # Hire
