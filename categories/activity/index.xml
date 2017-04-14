@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Girlguiding Beeston and Chilwell</title>
-    <link>https://samozzy.github.io/categories/activity/index.xml</link>
+    <link>http://guides.samosborne.me/categories/activity/index.xml</link>
     <description>Recent content on Girlguiding Beeston and Chilwell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>&amp;copy; 2016 Girlguiding</copyright>
-    <atom:link href="https://samozzy.github.io/categories/activity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://guides.samosborne.me/categories/activity/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A Hartley good jam</title>
-      <link>https://samozzy.github.io/news/jam/</link>
+      <link>http://guides.samosborne.me/news/jam/</link>
       <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://samozzy.github.io/news/jam/</guid>
+      <guid>http://guides.samosborne.me/news/jam/</guid>
       <description>&lt;p&gt;It was the 27th May, the strawberries were ripening on their branches, and the jars were ready. All signs pointing to a fun afternoon of jam-making!&lt;/p&gt;
 
 &lt;p&gt;
@@ -49,10 +49,10 @@ The Brownies arrived, punnets and empty jars in hand, and we cracked on. After t
     
     <item>
       <title>The Tower of Love</title>
-      <link>https://samozzy.github.io/news/hearts-tower/</link>
+      <link>http://guides.samosborne.me/news/hearts-tower/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://samozzy.github.io/news/hearts-tower/</guid>
+      <guid>http://guides.samosborne.me/news/hearts-tower/</guid>
       <description>&lt;p&gt;On 1st February, calm took over the centre as 1st Chilwell Brownies took to their tables.&lt;/p&gt;
 
 &lt;p&gt;In teams of four, the packets of Love Hearts were opened, decanted into bowls, and tower-making began.&lt;/p&gt;
